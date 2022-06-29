@@ -1,0 +1,39 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 17, 2019, 9:15:49 PM
+    Author     : DELL
+*/
+#customers {
+  font-family: "Exo", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  font-size:13px;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align:left;
+}
+
+#customers tr:nth-child(even){background-color: #f7f5f5;}
+
+#customers tr:hover {background-color: #e3dcdc;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color:#BB6464; /*#65AAF0;*/
+  color: #fff;
+  font-family:"Exo";
+  text-align:center;
+  font-family:14px;
+}
+#customers td a:hover{
+    color:#7267CB;
+    text-align:left;
+}

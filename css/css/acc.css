@@ -1,0 +1,42 @@
+ .mb-0 > a {  
+  display: block;  
+  position: relative;
+  padding-left:10px;
+}  
+h2 {  
+ font-style:normal;  
+font-family:Average;  
+color: #0074B7;   
+letter-spacing: -0.005em;   
+word-spacing: 1px;  
+font-size: 1.10em;  
+/*font-weight: bold;*/  
+margin-top: 20px;  
+text-align: left;  
+  }  
+ul li{
+    padding:5px 0 5px;/*border-bottom:1px dotted #151983;*/
+}
+li a.x{
+    height:35px;color:#151983;font-size:18px;font-family:Average;margin-left:10px;
+}
+.mb-0 > a:after {  
+  content: "\f078"; /* fa-chevron-down */  
+  font-family: 'FontAwesome';  
+  position: absolute;  
+  right: 0;  
+  color:#0074B7;
+}  
+.mb-0 > a[aria-expanded="true"]:after {  
+  content: "\f077"; /* fa-chevron-up */  
+}  
+.card ol { counter-reset: item }
+.card ol li{ display: block; font-family:average;}
+.card ol li:before { content: counters(item, ".") " "; counter-increment: item;}
+
+/*@media only screen and (max-width: 768px) {
+    .card ol li{font-size:13px;height:40px;padding:5px 0 0 0}
+}
+@media only screen and (max-width: 479px){
+    .card ol li{font-size:13px;height:40px;;padding:5px 0 0 0}
+}*/

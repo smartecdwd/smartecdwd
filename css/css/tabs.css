@@ -1,0 +1,7 @@
+input.error {
+    border-color: #f00 !important;
+}
+
+small.required {
+    color:#f00;
+}

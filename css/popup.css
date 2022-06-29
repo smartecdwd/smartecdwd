@@ -1,0 +1,187 @@
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{}
+.popup{
+    background-color: #ffffff;
+    background-image:url('https://kud.in.net/image/popup.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border:2px solid #03549a;
+    width: 50%;
+    height:500px;
+    /*padding: 30px 40px;*/
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 12%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; *:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{}
+.popup{
+    background-color: #ffffff;
+    background-image:url('https://kud.ac.in/image/popup.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border:2px solid #03549a;
+    width: 50%;
+    height:500px;
+    /*padding: 30px 40px;*/
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+    top: 12%;
+    border-radius: 8px;
+    font-family: "Poppins",sans-serif;
+    display: none; 
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .popup{
+        width: 90%;
+        background-image:url('https://kud.ac.in/image/popup.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.popup h2{
+    color:#821D30;
+    font-size:30px;
+    font-weight:bold;
+    font-family:Righteous;
+    text-shadow: 3px 3px 3px #ababab;
+    letter-spacing:.04em;
+    text-align:center;
+}
+@media screen and (max-width: 600px) {
+    .popup h2{
+         font-size:20px;
+    }
+}
+
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+		background: #03549a;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 25px;
+    text-align:center;
+    font-weight:bold;
+    font-family:Average;
+}
+@media screen and (max-width: 600px) {
+    .popup p{
+        font-size: 13px;}
+}
+a.x{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+		border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
+
+    text-align: center;
+}
+@media screen and (max-width: 600px) {
+    .popup{
+        width: 90%;
+        background-image:url('https://kud.in.net/image/popup.jpg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .popup{
+       left: 50%;
+        top: 12%;     
+    }
+    
+}
+.popup h2{
+    color:#821D30;
+    font-size:30px;
+    font-weight:bold;
+    font-family:Righteous;
+    text-shadow: 3px 3px 3px #ababab;
+    letter-spacing:.04em;
+}
+@media screen and (max-width: 600px) {
+    .popup h2{
+         font-size:20px;
+    }
+}
+
+.popup button{
+    display: block;
+    margin:  0 0 20px auto;
+    background-color: transparent;
+    font-size: 30px;
+    color: #ffffff;
+		background: #03549a;
+		border-radius: 100%;
+		width: 40px;
+		height: 40px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.popup h2{
+	margin-top: -20px;
+}
+.popup p{
+    font-size: 20px;
+    margin: 20px 0;
+    line-height: 25px;
+    text-align:center;
+    font-weight:bold;
+    font-family:Average;
+}
+@media screen and (max-width: 600px) {
+    .popup p{
+        font-size: 13px;}
+}
+a.x{
+    display: block;
+    width: 150px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    background-color: #0f72e5;
+		border-radius: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 0;
+}
+
