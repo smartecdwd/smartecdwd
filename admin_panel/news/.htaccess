@@ -1,7 +1,0 @@
-##<Files *.php>
-##    Deny from All 
-##</Files>-->
-
-<IfModule mime_module>
-  AddHandler application/x-httpd-ea-php71 .php .php7 .phtml
-</IfModule>
