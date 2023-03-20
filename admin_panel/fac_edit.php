@@ -3,7 +3,7 @@
     include "db_con.php";
     $did=$_SESSION['did'];
     $fid=$_REQUEST['fid'];
-    
+    //$_SESSION['fac_id']=$fid;
     $qry="select * from vw_faculty where fid=".$fid;
   
     $res=mysqli_query($conn,$qry);
@@ -26,6 +26,7 @@
         $fid=$row['fid'];
         $pmg=$row['pimg'];
         $dod=$row['dord'];
+        
     }
 ?>
 <!DOCTYPE html>
@@ -170,22 +171,33 @@
 						<label class="label" for="name" style="font-size:14px;color:#000">Vidwan  URL</label>
 							<input type="text" class="form-control" style="font-size:14px" name="vurl" value='<?php echo $vu;?>'>
 						</div>
-						<div class="form-group">
-						    <?php echo "<img src='data:image/jpg;charset=utf8;base64,". base64_encode($pmg)."' style='width:150px'/>";
-						    ?><br>
-							<label class="label" for="name" style="font-size:14px;color:#000">Upload Faculty Image</label>
-							<input type="file" class="form-control" name="f1" style="font-size:14px" placeholder="Upload Faculty Image">
-						</div>	
-						<div class="form-group">
-							<label class="label" for="name" style="font-size:14px;color:#000">Upload Profile</label>
-							<input type="file" class="form-control" style="font-size:14px"  name="f2">
-						</div>
+						<div class="row">
+    				        <div class="form-group col-6">
+    				            <label class="label" for="name" style="font-size:14px;color:#000">Upload Faculty Image</label>
+    						    <input type="file" class="form-control" name="f1" style="font-size:14px" placeholder="Upload Faculty Image" accept="image/png,image/jpeg">
+    				        </div>
+    				        <div class="form-group col-6">
+    					        <?php echo "<img src='data:image/jpg;charset=utf8;base64,". base64_encode($pmg)."' style='width:150px'/>";
+    					        ?><br>
+    					    </div>
+    					</div>
+						<div class="row">
+    						<div class="form-group col-6">
+    							<label class="label" for="name" style="font-size:14px;color:#000">Upload Profile</label>
+    							<input type="file" class="form-control" style="font-size:14px"  name="f2" accept="application/pdf">
+    						</div>
+    						<div class="form-group col-6">
+    						    <label class="label" for="name" style="font-size:14px;color:#000">Profile Uploaded</label><br>
+    						    <a href="https://www.kud.ac.in/admin_panel/fac/prof/<?echo $pr;?>" target="_blank" style="color:#0000FF"><?echo $pr;?> </a>
+    						    <a href="fac_pro_del.php?fid=<?echo $fid;?>" style="float:right;"><img src="https://www.kud.ac.in/admin_panel/images/x2.png"></a>
+    						</div>
+    					</div>
 			            <div class="row">
-				            <div class="col-md-8 form-group">
+				           <!-- <div class="col-md-8 form-group">
 				                 <label class="label" for="name" style="font-size:14px;color:#000">File Uploaded</label><br>
 				                 <table style="color:#334BFF;width:100%">
 				                 <?php
-				                    $qry="select * from faculty_file where fid=".$fid;
+				                    /*$qry="select * from faculty_file where fid=".$fid;
 				                    $res=mysqli_query($conn,$qry);
 				                    while($row=mysqli_fetch_array($res))
 				                    {?>
@@ -196,13 +208,13 @@
 				                               <img src="images/x2.png" style="padding:10px"></a> </td>
 				                       </tr>
 				                            
-				                <?php } ?>
+				                <?php }*/ ?>
 				                </table>
-				            </div>
+				            </div>-->
 				        </div>
 				        <div class="form-group">
 						    <label class="label" for="name" style="font-size:14px;color:#000">Display Order</label>
-							<input type="number" class="form-control" style="font-size:14px" name="dod" value='<?php echo $dod;?>'>
+							<input type="number" class="form-control" style="font-size:14px;width:100px" name="dod" value='<?php echo $dod;?>'>
 						</div>
     						        
 						           	<div class="form-group" style="padding-top:20px;text-align:center">
@@ -271,7 +283,7 @@
     	$vurl=$_REQUEST['vurl'];
     	$dod=$_REQUEST['dod'];
 
-        $qry="update faculty set fname='$fn',design='$dg',aos='$sp',mob='$m1',mob2='$m2',email='$email',website='$wurl',rea_url='$rurl',vurl='$vurl',dord='$dod' where fid=".$fid; 
+        $qry="update faculty set fname='$fn',design='$dg',aos='$sp',mob='$m1',mob2='$m2',email='$email',website='$wurl',rea_url='$rurl',vurl='$vurl',dord=$dod where fid=".$fid; 
 	    echo $qry;
         $res=mysqli_query($conn,$qry);	
 	

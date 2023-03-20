@@ -1,0 +1,139 @@
+.tree li {
+    list-style-type:none;
+    margin:0;
+    padding:10px 5px 0 5px;
+    position:relative;
+    display:block;
+}
+
+.tree ul li span{
+    background:#75426c;display:block;width:200px;border-color:#75426c;height:35px;color:#fff;
+}
+.tree ul li span a{
+    color:#fff;
+    text-decoration:none;
+    padding-left:3px;
+    
+}
+.tree ul ul li span{
+    background:#0090ff;display:block;width:200px;border-color:#0090ff;height:35px;color:#fff;
+}
+.tree ul ul li span a{
+    color:#fff;
+    text-decoration:none;
+    padding-left:3px;
+}
+.tree ul ul ul li span{
+    background:#28bf5e;display:block;width:200px;border-color:#28bf5e;height:35px;
+}
+.tree ul ul ul li span a{
+    color:#fff;
+    text-decoration:none;
+    padding-left:3px;
+    height:auto;
+    font-size:13px;
+}
+
+.tree ul ul ul li span {
+    color:#fff;
+    text-decoration:none;
+    padding-left:5px;
+    height:auto;
+    font-size:13px;
+}
+
+.tree ul ul ul li span i{
+    padding-right:5px;
+}
+.tree ul ul ul ul li span{
+    background:#fd7e14;display:block;width:200px;border-color:#fd7e14;height:35px;
+}
+.tree ul ul ul ul li span a{
+    color:#fff;
+    text-decoration:none;
+    padding-left:3px;
+    font-size:12px;
+    height:auto;
+}
+.tree ul ul ul ul li span{
+    color:#fff;
+    text-decoration:none;
+    padding-left:3px;
+    font-size:12px;
+    height:auto;
+}
+.tree li::before, 
+.tree li::after {
+    content:'';
+    left:-20px;
+    position:absolute;
+    right:auto
+}
+.tree li::before {
+    border-left:2px solid #000;
+    bottom:50px;
+    height:100%;
+    top:0;
+    width:1px;
+}
+.tree li::after {
+    border-top:2px solid #000;
+    height:20px;
+    top:25px;
+    width:25px
+}
+.tree li span {
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border:2px solid #000;
+    border-radius:3px;
+    display:inline-block;
+    padding:3px 8px;
+    text-decoration:none;
+    cursor:pointer;
+}
+.tree>ul>li::before,
+.tree>ul>li::after {
+    border:0
+}
+.tree li:last-child::before {
+    height:27px
+}
+/*.tree li span:hover {
+    background: hotpink;
+    border:2px solid #94a0b4;
+    }
+*/
+.tree ul li span:hover{
+    background:#613659;
+    border-color:#613659;
+}
+
+.tree ul ul li span:hover{
+    background:#007bff;
+    border-color:#007bff;
+}
+.tree ul ul ul li span:hover{
+    background:#28a745;
+    border-color:#28a745;
+}
+.tree ul ul ul ul li span:hover{
+    background:#fc7708;
+    border-color:#fc7708;
+}
+[aria-expanded="false"] > .expanded,
+[aria-expanded="true"] > .collapsed {
+  display: none;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .tree{
+        display:block;
+    }   
+}
+
+@media only screen and (min-width: 992px){
+    .tree{
+        display:none;
+    }
+}

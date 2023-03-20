@@ -13,7 +13,7 @@
     else if($deg1=='PG')
         $qry="select stream,degree from course_pg where course=$cou";
     $res=mysqli_query($conn,$qry);
-    
+    //echo $qry;
     $row=mysqli_fetch_array($res);
     $tbl=$row['stream'];
     $deg=$row['degree'];
@@ -29,17 +29,14 @@
         h5{font-family:Alice;color:#0074B7;text-align:center;font-size:20px;font-weight:bold}
 	    p{font-family:Average;font-size:17px;color:#000;margin:10px;;text-align:justify}
 	    form{ display: block !important; visibility:visible !important}
+	    #customers th{padding:2px;}
+	    #customers td{padding:2px;}
 	    
-	    body {
-            -webkit-print-color-adjust: exact !important;
-        }
-	    
-	    @media print {
-          /* style sheet for print goes here */
-          .noprint {
-            visibility: hidden;
-          }
-        }
+        @media print {
+            #pnt_img {
+            display: none;
+            }
+        }	    
 </style>
 
 
@@ -66,9 +63,11 @@
                                     $ehd="";
                                     $ccode="";
                                     $mprac="";
+                                    $term="";
                                    
                                     
                                     $qry="select * from $tbl where seatno='$rno' and course='$cou'";
+                                    //echo $qry;
                                     $res=mysqli_query($conn,$qry);
                                     $cnt=0;
                                     
@@ -85,13 +84,14 @@
                                        $ehd=$row['term'];
                                        $ccode=$row['course'];
                                        $mprac=$row['malpractice'];
+                                       $term=$row['term'];
                                        $cnt++;
                                     }
                                     
                                     
                                     if($cnt==0)
                                     {
-                                        echo "<script>window.location.href='result-m.php?msg=true';</script>";
+                                       echo "<script>window.location.href='result-m.php?msg=true';</script>";
                                     }
         							?>
         							<div class="table-responsive">
@@ -124,7 +124,7 @@
                                     </tr>-->
                                     <tr>
                                         <th style="width:25%;text-align:right;background-color:#eee;color:#000;font-family:Average">Examination Term</th>
-                                        <td style="background-color:#fff"><strong>March 2022</strong></td>
+                                        <td style="background-color:#fff"><strong><?echo $term; ?></strong></td>
                                     </tr>
                                 </table>
                                 </div>
@@ -136,13 +136,13 @@
                                 <div class="table-responsive">
                                     <?php
                                         if($mprac==0){?>
-                                            <table class="table-striped table-bordered" id="customers" style="width:80%;font-size:11px;padding-left:3px;color:#000;" align="center">
+                                            <table class="table-striped table-bordered" id="customers" style="width:100%;font-size:11px;padding-left:3px;color:#000;" align="center">
                                                 <tr>
                                                     <th>Subject Code</th>
                                                     <th>Subject Name</th>
-                                                    <?if($deg=='UG'){?>
+                                                    <?//if($deg=='UG'){?>
                                                         <th>Sub Type</th>
-                                                    <?}?>
+                                                    <?//}?>
                                                     <th>Max Marks</th>
                                                     <th>Min Marks</th>
                                                     <th>Marks Obtained</th>
@@ -175,6 +175,7 @@
                                                     $th2="";
                                                     $th3="";
                                                     $ttot=0;
+                                                    $gmrk=0;
                                                     
                                                     while($row=mysqli_fetch_array($res))
                                                     {
@@ -184,9 +185,38 @@
                                                         $mn_mark=$mn_mark + $row["TheoryMin"];
                                                         $ia_mark=$ia_mark + $row["IAMax"];
                                                         $mx_omark=$mx_omark + $row["TheoryObtained"];
+                                                        $ttot=0;
+                                                        $gmrk=0;
+                                                        $th1="";
+                                                        $th2="";
+                                                        $th3="";
                                                         if($deg=='UG')
                                                         {
-                                                            if($row["Theory1"]!="0")
+                                                            if($row["NoOfPapers"]==1)
+                                                            {
+                                                                $th1="Theory1: ". $row["Theory1"] ;
+                                                                $ttot= $row["Theory1"] ;
+                                                            }
+                                                            else if($row["NoOfPapers"]==2)
+                                                            {
+                                                                $th1="Theory1: ". $row["Theory1"] ;
+                                                                $th2="Theory2: ". $row["Theory2"] ;
+                                                                $ttot= ($row["Theory1"]  + $row["Theory2"]) ;
+                                                            }
+                                                            else if($row["NoOfPapers"]==3)
+                                                            {
+                                                                $th1="Theory1: ". $row["Theory1"] ;
+                                                                $th2="Theory2: ". $row["Theory2"] ;
+                                                                $th3="Theory3: ". $row["Theory3"] ;
+                                                                $ttot=($row["Theory1"]  + $row["Theory2"] + $row["Theory3"]);
+                                                            }
+                                                            else{
+                                                                $th1="";
+                                                                $th2="";
+                                                                $th3="";
+                                                            }
+                                                            
+                                                           /* if($row["Theory1"]!="0" && $row["Theory1"]!=null)
                                                             {   
                                                                 $th1="Theory1: ". $row["Theory1"] ;
                                                                 $ttot= $row["Theory1"] ;
@@ -194,7 +224,7 @@
                                                             else
                                                                 $th1="";
                                                                 
-                                                            if($row["Theory2"]!="0")
+                                                            if($row["Theory2"]!="0" && $row["Theory2"]!=null)
                                                             {
                                                                 $th2="Theory2: ". $row["Theory2"] ;
                                                                 $ttot=$ttot + $row["Theory2"] ;
@@ -202,13 +232,14 @@
                                                             else
                                                                 $th2="";
                                                             
-                                                            if($row["Theory3"]!="0")
+                                                            if($row["Theory3"]!="0" && $row["Theory3"]!=null)
                                                             {
                                                                 $th3="Theory3: ". $row["Theory3"] ;
                                                                 $ttot=$ttot + $row["Theory3"] ;
                                                             }
                                                             else
                                                                 $th3="";
+                                                            */
                                                         }
                                                         $ia_omark=$ia_omark + $row["IAObtained"];
                                                         
@@ -245,8 +276,12 @@
                                                                 echo $th2."<br>";
                                                             if($th3!="")
                                                                 echo $th3."<br>";
-                                                            if($ttot>0)
-                                                                    echo "Total : ". $ttot;
+                                                            if($ttot>=0 && $th1!=""){
+                                                                    echo "Grace Marks :". $row["GraceMarks"]."<br>"; 
+                                                                    echo "Total : ". ($ttot + $row["GraceMarks"]) ; 
+                                                                    
+                                                            }
+                                                                
                                                         }
                                                         echo "<td style='text-align:center;background-color:#fff;width:8%'>".$row["IAMax"]."</td>".
                                                         //"<td style='text-align:center;background-color:#fff'>".$tot_mark."</td>".
@@ -285,8 +320,8 @@
                                                ?>
                                                 <tr>
                                                     <td colspan="2" style='text-align:right;font-weight:bold'>Result </td>
-                                                    <td style='text-align:center;font-weight:bold'> <?echo $result;?></td>
-                                                    <td colspan="8"></td>
+                                                    <td colspan="4" style='text-align:center;font-weight:bold'> <?echo $result;?></td>
+                                                    <td colspan="5"></td>
                                                 </tr>
                                                </table>
                                         <?}
@@ -300,10 +335,17 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-8 offset-md-2">
-                                <p>Download Application for RV / RT / Challenge valuation and photo copy by clicking <a href="https://www.kud.ac.in/results.php" target="_blank">here</a>. </p>
+                                <?
+                                    if($deg=='UG'){?>
+                                        <p style="font-size:12px">Download Application for RV / RT / Challenge valuation and photo copy by clicking <a href="http://kudrevalapplication.aargeessoftware.com/default.aspx" target="_blank" style="font-size:12px">here</a>
+                                <?  }else if($deg=='PG'){?>
+                                        <p style="font-size:12px">Download Application for RV / RT / Challenge valuation and photo copy by clicking <a href="http://kudrevalapplicationpg.aargeessoftware.com/default.aspx" target="_blank" style="font-size:12px">here</a>
+                                <?  }?>
+                                    
+                                    <!--<p>Download Application for RV / RT / Challenge valuation and photo copy by clicking <a href="https://www.kud.ac.in/results.php" target="_blank">here</a>. </p>-->
                                 <p></p>
-                                <p style="font-weight:600;font-size:14px;">ATTENTION</p>
-                                <ul style="font-size:14px;font-family:average;color:#000">
+                                <p style="font-weight:600;font-size:12px;">ATTENTION</p>
+                                <ul style="font-size:12px;font-family:average;color:#000">
                                     <li>The candidate wiling to apply for RV/RT/Challenge valuation and photo copy should submit the application along with the internet result copy available on website within 10 days from the date of declaration of the result on web: kud.ac.in to the Principal concerned. 
                                     </li>
                                     <li>
@@ -332,7 +374,7 @@
                             <div class="col-8 mx-auto">
                                  <!--<span style="float:right">
                                     <!--<a href="#"  class="form-control btn-success noprint" onclick="window.print();"> Print</a>-->
-                                    <center><img src="image/print.png" onclick="window.print();" class="noprint" style="cursor:pointer;width:20%"></center>
+                                    <center><img src="image/print.png" id="pnt_img" onclick="window.print();" class="noprint" style="cursor:pointer;width:20%"></center>
                                 <!--</span>
                                 <!--<span style="float:right">
                                     <input type="submit" class="form-control bg-primary" style="width:200px;color:#fff">
@@ -360,4 +402,4 @@
   </div>
 </div>
 <div class="clearfix"></div>
-<?php include 'footer.php'; ?>
+<?php include 'footer-res.php'; ?>

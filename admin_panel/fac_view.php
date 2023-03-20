@@ -121,7 +121,7 @@
                         <div class="col-md-12">
                                <form action="dep_upd.php" method="post" enctype="multipart/form-data">
                                    	<div class="form-group">
-                                   	    <table class="table" style="width:100%;color:#000">
+                                   	    <table class="table" style="width:70%;color:#000" align="center">
                                    	        <tr>
                                    	            <td style="font-weight:bold;font-size:18px"><?php echo $dn; ?></td>
                                    	        </tr>
@@ -129,7 +129,7 @@
                                    	            <td><?php //echo $dj; ?></td>
                                    	        </tr>-->
                                    	    </table>
-                                   	    <table class="table" style="width:100%;color:#000">
+                                   	    <table class="table" style="width:70%;color:#000" align="center">
                                    	        <?
                                    	            $qry="select * from vw_faculty where did=".$did;
                                                 $res=mysqli_query($conn,$qry);

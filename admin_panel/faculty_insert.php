@@ -27,7 +27,7 @@
 	$ra=rand(10000,1000000);
 	$cate_id="fac".$ra;
 	$imgContent="";
-	if($_FILES['f1']['size']>0)
+	if($_FILES['f1']['size']>0 && ($_FILES['f1']['type']=='image/png' || $_FILES['f1']['type']=='image/jpg' || $_FILES['f1']['type']=='image/jpeg'))
 	{ 
             $image = $_FILES['f1']['tmp_name']; 
             $imgContent = addslashes(file_get_contents($image)); 
@@ -44,7 +44,7 @@
 		
         $row=mysqli_fetch_array($res);
         $id=$row['fid'];
-        if($_FILES['f2']['size']>0)
+        if($_FILES['f2']['size']>0 && $_FILES['f1']['type']=='application/pdf')
         {
                 $temp='fac/prof/';
                 $file = $_FILES['f2']['name'];

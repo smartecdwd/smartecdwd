@@ -10,7 +10,7 @@
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-      <div class="col-sm-3" style="background-color:#e1ebea">
+      <div class="col-md-3 d-none d-sm-block col-sm-6" style="background-color:#e1ebea">
 	  <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice"><b>EXAM SECTION</b></h5>
            <br>
 
@@ -22,12 +22,13 @@
 				
                 <a href="sub_code_pg.php" class="active">Subject Code for PG</a>
                 <a href="sub_code_ug.php">Subject Code for UG</a>
+                <a href="exam.php">Apply For Convocation 2023 </a>
             </div>
         
       </div><br>
 <br>
 
-      <div class="col-sm-9 director_img">
+      <div class="col-sm-6 col-md-9 director_img">
         <h2 class="title_head" style="font-family:Domine;text-align:center">Subject Code for PG</h2>
         <hr>
             <div class="row">

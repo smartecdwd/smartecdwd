@@ -1,15 +1,8 @@
 <?php
 error_reporting(0);
 include 'db_con.php';
-
-
-
 ?>
-
-
-   <?php include 'iqac-header.php'; ?>
-
-
+<?php include 'iqac-header.php'; ?>
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia|Trirong|Akaya+Telivigala|Alice|Average|Andada Pro|Enriqueta">
 <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Fredoka+One&family=Roboto+Slab&family=Signika:wght@500&family=Zen+Kurenaido&display=swap" rel="stylesheet">

@@ -1,13 +1,8 @@
 <?php
-error_reporting(0);
-include 'db_con.php';
-
-
-
+    error_reporting(0);
+    include 'db_con.php';
+    include 'iqac-header.php'; 
 ?>
-
-
-   <?php include 'iqac-header.php'; ?>
 
 
 

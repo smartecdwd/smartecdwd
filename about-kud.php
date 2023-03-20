@@ -18,15 +18,15 @@ include 'db_con.php';
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-      <div class="col-sm-3" style="background-color:#e1ebea">
+      <div class="col-md-3 col-md-3 d-none d-sm-block col-sm-6" style="background-color:#e1ebea">
 	  <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice"><b>ABOUT </b></h5>
            <br>
 
             <div class="vertical-menu" style="width:100%">
                <a href="about-kud.php" class="active">About KUD</a>
-                 <a href="about-vis.php">Vision & Mission</a>
+                <a href="about-vis.php">Vision & Mission</a>
                 <a href="former-vc.php">Former Vice Chancellors</a>
-				
+				<a href="alumni.php">Alumni</a>
                 
             </div>
         
@@ -35,7 +35,7 @@ include 'db_con.php';
       <div class="col-sm-9 director_img">
         <h2 class="title_head" style="font-family:Domine;text-align:center">Karnatak University, Dharwad</h2>
         <hr>
-        <img src="images/kudfront.jpg" class="img-fluid"><br>
+        <img src="images/kudfront.jpg" class="img-fluid" alt="KUD"><br>
 <br>
 
 

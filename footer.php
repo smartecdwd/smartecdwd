@@ -37,9 +37,9 @@
 						</a>
 					</li>
 					<li class="list-inline-item"><a class="p-2 danger1" href="#"><i class="fa fa-facebook" ></i></a></li>
-					<li class="list-inline-item"><a class="p-2 danger1" href="#"><i class="fa fa-twitter"></i></a></li>
+					<li class="list-inline-item"><a class="p-2 danger1" href="https://twitter.com/kud_dharwad" target="_blank"><i class="fa fa-twitter"></i></a></li>
 					<!-- <li class="list-inline-item"><a class="p-2 danger1" href="#"><i class="fa fa-instagram"></i></a></li> -->
-					<li class="list-inline-item"><a class="p-2 danger1" href="#"><i class="fa fa-youtube"></i></a></li>
+					<li class="list-inline-item"><a class="p-2 danger1" href="https://www.youtube.com/@KarnatakUniversityDharwad" target="_blank"><i class="fa fa-youtube"></i></a></li>
 					
 					<li style="font-family:EXO; ">
 						<a href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&hd=kud.ac.in&sacu=1&flowName=GlifWebSignIn&flowEntry=AddSession" target="_blank">
@@ -95,7 +95,7 @@
 								<li class="list-inline-item"><i class="fa fa-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="danger1" style="font-family:'Noto Serif'"> Admissions</a></li><br>
 								<li class="list-inline-item"><i class="fa fa-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="results.php" class="danger1" style="font-family:'Noto Serif'"> Results</a></li><br>
 
-								<li class="list-inline-item"><i class="fa fa-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="danger1" style="font-family:'Noto Serif'"> RTI</a></li><br>
+								<li class="list-inline-item"><i class="fa fa-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="rti.php" class="danger1" style="font-family:'Noto Serif'"> RTI</a></li><br>
 
 								<li class="list-inline-item"><i class="fa fa-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#" class="danger1" style="font-family:'Noto Serif'"> Regulations</a></li><br>
 								<li class="list-inline-item"><i class="fa fa-check"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a href="notifications.php" class="danger1" style="font-family:'Noto Serif'"> Notifications</a></li><br>
@@ -118,14 +118,16 @@
 			
 			
 			
-			<div class="col-lg-3 footer_grid">
-				<div class="d-flex flex-column">
-						<div class="p-2">
+		    	<div class="col-lg-3 footer_grid">
+	    			<div class="d-flex flex-column">
+    					<div class="p-2">
 							<h4 class="py-3" style="font-family: 'Libre Baskerville', sans-serif; font-size:15px; font-style:none"><b>MAP</b></h4>
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3845.817487134207!2d74.98304251476972!3d15.440398989272024!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8d2bb54711bb7%3A0x7137ae3ece56098b!2sKarnatak%20University%2C%20Dharwad!5e0!3m2!1sen!2sin!4v1638611962302!5m2!1sen!2sin" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-								
-								</div>
 						</div>
+						<div class="p-2">
+							<a class="py-3 btn btn-light rounded" type="button" style="font-family: 'Libre Baskerville', sans-serif; font-size:15px;" href="sitemap.php"><b>Sitemap</b></a>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -136,7 +138,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-sm-12 text-center">
-					<p style="color:#fff;text-align:center;font-family:Noto serif;font-size:12px"><i class="fa fa-copyright"></i> 2022. <a href="#">Karnatak University Dharwad</a>. All Rights Reserved | Designed &amp; Developed By : <a href="#">SmarTec IT Solutions</a></p>
+					<p style="color:#fff;text-align:center;font-family:Noto serif;font-size:12px"><i class="fa fa-copyright"></i> 2022. <a href="#">Karnatak University Dharwad</a>. All Rights Reserved | Designed &amp; Developed By : <a href="https://smartec.in" target="_blank" style="color:#ECF87F">SmarTec IT Solutions</a></p>
 				</div>
 			</div>
 		</div>
@@ -325,6 +327,13 @@ $(function(){
 <script src="js_L0JHXVH_b3zU1WK3g5A71kBZRBBXxTjVQAhFH9qjtIU.js"></script>
 <script src="https://cse.google.com/cse.js?cx=003542863852187245998:1iuxkpwcroy"></script>
 <script src="js_SFFd7CyQHNk9YNahjX_qhNLSvFmi7EUVAxDSRkikgPA.js"></script>
+<script>
+    $(document).ready(function() {
+    $("img").on("contextmenu",function(){
+       return false;
+    });
+});
+</script>
 </body>
 
 

@@ -227,6 +227,7 @@
                 
                 $qry="insert into fac_act_file (faid,fname) values(".$row['fid'].",'$file')";
                 $res=mysqli_query($conn,$qry);
+             //   echo $qry;
             }
         }
         echo "<script>window.location.href='dept_dashboard.php';</script>";

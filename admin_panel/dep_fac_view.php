@@ -111,10 +111,10 @@
 				<div class="col-md-12 p-4 p-md-5 order-md-last bg-light" style="border:1px solid #1eaaf1;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
 				
                     <div class="row" style="margin-top: 10px">
-                        <div class="col-12">
+                        <div class="col-md-8 mx-auto">
                                <form action="dep_upd.php" method="post" enctype="multipart/form-data">
                                    	<div class="form-group">
-                                   	    <table class="table" style="width:100%;color:#000">
+                                   	    <table class="table" style="width:70%;color:#000">
                                    	        <tr>
                                    	            <td style="font-weight:bold;font-size:18px"><?php echo $dn; ?></td>
                                    	        </tr>
@@ -122,7 +122,7 @@
                                    	            <td><?php echo $dj; ?></td>
                                    	        </tr>
                                    	    </table>
-                                   	    <table class="table" style="width:100%;color:#000">
+                                   	    <table class="table" style="width:70%;color:#000">
                                    	        <?
                                    	            $qry="select * from dep_faci_files where dfid=".$fid;
     

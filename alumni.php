@@ -19,7 +19,7 @@ include 'db_con.php';
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-        <div class="col-sm-3" style="background-color:#e1ebea">
+        <div class="col-sm-3 col-md-3 d-none d-sm-block col-sm-6" style="background-color:#e1ebea">
 	        <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464"><b>ABOUT</b></h5>
             <br>
             <br>
@@ -27,7 +27,7 @@ include 'db_con.php';
                 <a href="about-kud.php" >About KUD</a>
                 <a href="about-vis.php">Vision & Mission</a>
                 <a href="former-vc.php">Former Vice Chancellors</a>
-                <a href="former-vc.php" class="active">Alumni</a>
+                <a href="alumni.php">Alumni</a>
             </div>
         
       </div><br>
@@ -38,7 +38,7 @@ include 'db_con.php';
         <h2 class="title_head" style="font-family:Domine;text-align:center">Distinguished Alumni</h2>
         <hr>
             <div class="row">
-                <div class="col-md-3 d-flex">
+                <div class="col-md-3 col-md-3 d-none d-sm-block col-sm-6 d-flex">
                     <div class="card mb-3" style="border:1px solid A06AB4">
                         <img class="card-img-top" src="images/dalumni/girish-karnad.jpg" alt="Girish Karnad">
                         <div class="card-body py-3">

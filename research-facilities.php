@@ -10,28 +10,41 @@
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-      <div class="col-sm-3" style="background-color:#e1ebea">
+      <div class="col-md-3 d-none d-sm-block col-sm-6" style="background-color:#e1ebea">
 	  <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice"><b>RESEARCH</b></h5>
            <br>
 
-            <div class="vertical-menu" style="width:100%;height:-101%">
+             <div class="vertical-menu" style="width:100%;height:-101%">
                <!--  <a href="index.php">Home</a> -->
-                <a href="research-facilities.php" class="active">Research Facilities</a>
-				<a href="research-project.php">Research Projects</a>
-				<a href="research-centres.php">Research Centres</a>
-                <a href="fellowship.php">Fellowship</a>
+                <a href="research-pol.php">Research Policies</a>
+				<a href="research-sg.php">Research Seed Grants</a>
+				<a href="research-dp.php">Departmental Projects</a>
+				<a href="ind-fac.php">Individual Faculty Projects</a>
+				<a href="research-facilities.php"  class="active">Research Facilities</a>
+                <a href="pmeb.php">PMEB</a>
                 <br>
             </div>
         
       </div><br>
 <br>
 
-      <div class="col-sm-9 director_img">
-        <h2 class="title_head" style="font-family:Domine;text-align:center">Research Facilities</h2>
+      <div class="col-sm-6 col-md-9 director_img">
+        <h2 class="title_head" style="font-family:Domine;text-align:center">Research Facilities at Karnatak University, Dharwad</h2>
         <hr>
             <div class="row">
                 <div class="col-sm-12">
-                    <p style="font-size:16px">This WebPage will be updated soon...</p>                
+                    <div class="table-responsive">
+			            <table id="customers" style="width:80%" align="center">
+			                <tr>
+			                    <th>Sl. No.</th>
+			                    <th>Research Facilities</th>
+			                </tr>
+                            <tr>
+                                <td class="text-center" width="50">1</td>
+                                <td width="540"><a href="https://www.kud.ac.in/file_upload/research/Research Facilities.pdf" target="_blank">Research Facilities</a></td>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
             <div class="clearfix"></div>

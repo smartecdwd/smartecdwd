@@ -209,6 +209,10 @@
                                             echo "<option selected value='EV'>Events</option>";
                                         else
                                             echo "<option value='EV'>Events</option>";
+                                        if($nt=='AD')
+                                            echo "<option selected value='AD'>Admission 2022-23</option>";
+                                        else
+                                            echo "<option value='AD'>Admission 2022-23</option>";
                                     ?>
                                 </select>
                             </div>
@@ -224,11 +228,13 @@
                             $res=mysqli_query($conn,$qry);
                             $cnt=1;
                             while($row=mysqli_fetch_array($res))
-                            {?>
+                            {
+                                $_SESSION['nid1']= $nid;
+                            ?>
                                     <tr>
                                     <td style="text-align:center;width:10%"><?php echo $cnt++;?></td>
                                     <td><a href="noti/<?php echo $row['fname'];?>"><?php echo $row['fname'];?></a></td>
-                                    <td><a href="noti_file?fid=<?php echo $row['nfid'];?>"><img src="images/x1.png"></a></td>
+                                    <td><a href="noti_file.php?fid=<?php echo $row['nfid'];?>"><img src="images/x1.png"></a></td>
                                     </tr>
                             <?}?>
                                 </table>

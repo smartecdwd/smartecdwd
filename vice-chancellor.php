@@ -14,6 +14,7 @@
         $ph=$row['ph'];
         $qu=$row['quali'];
         $prf=$row['info'];
+        
     }
 
 
@@ -48,7 +49,7 @@
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-      <div class="col-sm-3" style="background-color:#e1ebea">
+      <div class="col-md-3 d-none d-sm-block col-sm-6" style="background-color:#e1ebea">
 	  <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice"><b>ADMINISTRATION</b></h5>
            <br>
 
@@ -73,7 +74,7 @@
       </div><br>
 <br>
 
-      <div class="col-sm-9">
+      <div class="col-sm-6 col-md-9">
 
 
 
@@ -116,7 +117,7 @@
                             {?>
                                <br> <button class="btn2 view_btn"><a href="#">More Details</a></button>
                             <?}else{?>
-                               <br> <button class="btn2 view_btn"><a href='file_upload/adm/Prof. K. B. Gudasi.pdf' target="blank">More Details</a></button>
+                               <br> <button class="btn2 view_btn"><a href='<?echo $prf;?>' target="blank">More Details</a></button>
                             <?}?>
                         </div>
                   </div>

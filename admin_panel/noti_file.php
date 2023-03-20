@@ -3,7 +3,7 @@
     include "db_con.php";
 
     $fid=$_REQUEST['fid'];
-    $nid=$_REQUEST['nid'];
+    $nid=$_SESSION['nid1'];
     
    // if($dp=='dept')
     $qry="delete from notification_file where nfid=".$fid;

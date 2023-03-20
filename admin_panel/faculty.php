@@ -130,11 +130,11 @@
 						</div>
 						<div class="form-group">
 							<label class="label" for="name" style="font-size:14px;color:#000">Upload Faculty Image</label>
-							<input type="file" class="form-control" name="f1" style="font-size:14px;color:#000" placeholder="Upload Faculty Image">
+							<input type="file" class="form-control" name="f1" style="font-size:14px;color:#000" placeholder="Upload Faculty Image" accept="image/png,image/jpeg">
 						</div>	
 						<div class="form-group">
 							<label class="label" for="name" style="font-size:14px;color:#000">Upload Profile</label>
-							<input type="file" class="form-control" name="f2" style="font-size:14px;color:#000">
+							<input type="file" class="form-control" name="f2" style="font-size:14px;color:#000" accept="application/pdf">
 						</div>
 						<div class="form-group">
 						    <label class="label" for="name" style="font-size:14px;color:#000">Display Order</label>

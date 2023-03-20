@@ -12,6 +12,7 @@ and open the template in the editor.
   border-collapse: collapse;
   width: 100%;
   font-size:13px;
+  cursor:default;
 }
 
 #customers td, #customers th {

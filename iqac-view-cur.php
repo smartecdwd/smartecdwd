@@ -33,31 +33,7 @@ require('db_con.php');
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-        
-      <!-- <div class="col-sm-3" style="background-color:#eee">
-	  <h5 style="text-align:center; padding-top:20px; "><b>DEPARTMENTS</b></h5>
-           <br>
-
-            <div class="vertical-menu" style="width:100%">
-              
-                <a href="arts.php" class="active" style="background-color:#6495ED">Arts</a>
-                <a href="science.php">Science</a>
-				<a href="social-science.php">Social Science</a>
-				<a href="commerce.php">Commerce</a>
-				<a href="law.php">Law</a>
-				<a href="education.php">Education</a>
-				<a href="management.php">Management</a>
-				<a href="diploma.php">Diploma</a>
-				
-				
-                
-            </div>
-        
-      </div><br>
-<br>
- -->
       <div class="col-lg-12">
-   				
    				<br><center>
         <h5><strong>IQAC - CURRENT TEAM</strong></h5></center>
         <br>
@@ -81,7 +57,7 @@ require('db_con.php');
                             }
                         ?> 
                                         
-                                        <div class="col-md-4 col-sm-4 col-xs-12">
+                                        <div class="col-md-4 col-sm-3 col-xs-12 mx-auto">
                                           <div class="row ourTeam-box text-center" style="border-color:#0074B7;border-radius:15px">
                                             <div class="col-md-12 section1">
                                               <img src="data:image/jpg;charset=utf8;base64,<?php echo base64_encode($row['pimg']); ?>"><br><br>

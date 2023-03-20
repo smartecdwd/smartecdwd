@@ -16,7 +16,7 @@ include 'db_con.php';
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-      <div class="col-sm-3" style="background-color:#e1ebea">
+      <div class="col-md-3 d-none d-sm-block col-sm-6" style="background-color:#e1ebea">
 	  <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice"><b>EXAM SECTION</b></h5>
            <br>
 
@@ -28,12 +28,13 @@ include 'db_con.php';
 				
                 <a href="sub_code_pg.php">Subject Code for PG</a>
                 <a href="sub_code_ug.php">Subject Code for UG</a>
+                <a href="exam.php">Apply For Convocation 2023 </a>
             </div>
         
       </div><br>
 <br>
 
-      <div class="col-sm-9 director_img">
+      <div class="col-sm-6 col-md-9 director_img">
         <h2 class="title_head" style="font-family:Domine;text-align:center">Applications Entry For Colleges</h2>
         <hr>
         <table id="customers" style="width:80%" align="center">
@@ -43,8 +44,9 @@ include 'db_con.php';
                     </tr>
                     <tr>
                         <td style="text-align:center" width="10%">1</td>
-                        <td > 
-                         <a href="http://www.kudapplication.aargeesitsolutions.com/" target="_blank"> Exam Application Download</a>
+                        <td >
+                            <a href="http://kudapplicationug.aargeessoftware.com/" target="_blank"> Exam Application Download</a> 
+                         <!--<a href="http://www.kudapplication.aargeesitsolutions.com/" target="_blank"> Exam Application Download</a>-->
                         </td>
                        
                     </tr>
@@ -55,13 +57,13 @@ include 'db_con.php';
                         </td>
                         
                     </tr>
-                    <tr>
+                    <!--<tr>
                         <td style="text-align:center" width="10%">3</td>
                         <td > 
                            <a href="http://www.kudapplicationentry.aargeesitsolutions.com/" target="_blank">Application Entry For Colleges 2</a>
                         </td>
                         
-                    </tr>
+                    </tr>-->
                     <tr>
                         <td style="text-align:center" width="10%">4</td>
                         <td > 
@@ -72,35 +74,39 @@ include 'db_con.php';
 					 <tr>
                         <td style="text-align:center" width="10%">5</td>
                         <td > 
-                           <!--<a href="http://www.kudapplicationentrynew.eadminaargees.com/" target="_blank"> Application Entry For PG Colleges 1</a>-->
-                           <a href="http://kudapplicationentrypg.aargeesitsolutions.com/" target="_blank"> Application Entry For PG Colleges 1</a>
+                           <!--<a href="http://kudapplicationentrypg.aargeesitsolutions.com/" target="_blank"> Application Entry For PG Colleges 1</a>-->
+                           <a href="https://kudapplicationentrypg.aargeessoftware.com/" target="_blank"> Application Entry For PG Colleges 1</a>
                         </td>
                         
                     </tr>
 					 <tr>
                         <td style="text-align:center" width="10%">6</td>
-                        <td > 
-                           <a href="http://kudapplicationsem5.aargeesitsolutions.com/" target="_blank"> KUD Application Semester 5</a>
+                        <td> 
+                            <a href="http://kudapplicationsem5.aargeessoftware.com/" target="_blank"> KUD Application Semester 5</a>
+                           <!--<a href="http://kudapplicationsem5.aargeesitsolutions.com/" target="_blank"> KUD Application Semester 5</a>-->
                         </td>
                         
                     </tr>
 					 <tr>
                         <td style="text-align:center" width="10%">7</td>
-                        <td > 
-                           <a href="http://kudapplicationentrysem5new.aargeesitsolutions.com/" target="_blank">KUD Application Entry Semester 5</a>
+                        <td> 
+                            <a href="https://kudapplicationentrysem5new.aargeessoftware.com/" target="_blank">KUD Application Entry Semester 5</a>
+                           <!--<a href="http://kudapplicationentrysem5new.aargeesitsolutions.com/" target="_blank">KUD Application Entry Semester 5</a>-->
                         </td>
                         
                     </tr>
 					 <tr>
                         <td style="text-align:center" width="10%">8</td>
-                        <td > 
-                           <a href="http://kudapplicationsem6.aargeesitsolutions.com/" target="_blank"> KUD Application Semester 6</a>
+                        <td>
+                            <a href="http://kudapplicationsem6.aargeessoftware.com/" target="_blank"> KUD Application Semester 6</a>
+                           <!--<a href="http://kudapplicationsem6.aargeesitsolutions.com/" target="_blank"> KUD Application Semester 6</a>-->
                         </td>
                     </tr>
 					 <tr>
                         <td style="text-align:center" width="10%">9</td>
-                        <td > 
-                           <a href="http://kudapplicationentrysem6.aargeesitsolutions.com/" target="_blank"> KUD Application Entry Semester 6</a>
+                        <td> 
+                            <a href="http://kudapplicationentrysem6new.aargeessoftware.com/" target="_blank"> KUD Application Entry Semester 6</a>
+                           <!--<a href="http://kudapplicationentrysem6.aargeesitsolutions.com/" target="_blank"> KUD Application Entry Semester 6</a>-->
                         </td>
                     </tr>
 					 <tr>

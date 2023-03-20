@@ -27,7 +27,7 @@
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-      <div class="col-sm-3" style="background-color:#e1ebea">
+      <div class="col-md-3 d-none d-sm-block col-sm-6" style="background-color:#e1ebea">
 	  <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice"><b>ADMINISTRATION</b></h5>
            <br>
 
@@ -50,7 +50,7 @@
             </div>
         
       </div>
-      <div class="col-sm-9">
+      <div class="col-md-9 col-sm-6">
 <section class="sectione2">
   <div class="container">
   
@@ -87,7 +87,7 @@
                                                     </tr>
                                                
                             <?php
-                                                $qry="select * from adm_pro where year(pdate)=".$yr[$i];
+                                                $qry="select * from adm_pro where year(pdate)=".$yr[$i]. " order by pdate";
                                                 $res=mysqli_query($conn,$qry);
                                                 $cnt=1;
                                                 while($row=mysqli_fetch_array($res))
@@ -96,7 +96,7 @@
                                                     <tr>
                                                         <td style="text-align:center"><? echo $cnt++; ?></td>
                                                         <td><a href="https://www.kud.ac.in/admin_panel/admin/file_upload/syn_pro/<? echo $row['fname'];?>" target="_blank"><? echo $row['details']; ?></a></td>
-                                                        <td style="text-align:center"><? echo $row['pdate']; ?></td>
+                                                        <td style="text-align:center"><? echo date('d-M-Y',strtotime($row['pdate'])); ?></td>
                                                     </tr>
                                                    <!--<li>
                                                        <a href='#' style="height:35px;color:#151983;font-size:14px;font-family:Average;margin-left:10px;" target='blank'><? //echo  $row['details'];?>

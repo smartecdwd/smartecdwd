@@ -1,0 +1,9 @@
+<?php
+    $serv="localhost";
+    //$uname="kudin_kudresult";
+    $uname="kudin_revresult";
+    $pwd="KUDrevres@2468";
+    $db="kudin_rev_result";
+    $conn=mysqli_connect($serv,$uname,$pwd);
+    mysqli_select_db($conn,$db);
+?>

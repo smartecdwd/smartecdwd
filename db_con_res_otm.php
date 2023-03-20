@@ -1,0 +1,9 @@
+<?php
+    $serv="localhost";
+    //$uname="kudin_kudresult";
+    $uname="kudin_otm";
+    $pwd="OTM@kudres#642";
+    $db="kudin_otmresult";
+    $conn=mysqli_connect($serv,$uname,$pwd);
+    mysqli_select_db($conn,$db);
+?>

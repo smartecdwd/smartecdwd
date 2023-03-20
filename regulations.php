@@ -18,7 +18,7 @@ include 'db_con.php';
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-      <div class="col-sm-3" style="background-color:#e1ebea">
+      <div class="col-md-3 d-none d-sm-block col-sm-6" style="background-color:#e1ebea">
 	  <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice"><b>ACADEMIC</b></h5>
            <br>
 
@@ -37,10 +37,7 @@ include 'db_con.php';
       </div><br>
 <br>
 
-      <div class="col-sm-9">
-
-
-
+      <div class="col-sm-6 col-md-9">
 <section class="sectione2">
   <div class="container">
   
@@ -74,6 +71,14 @@ include 'db_con.php';
                         <tr>
                             <td style="text-align:center">5</td>
                             <td><a href="file_upload/aca_reg/Regulations governing the establishment and operation of Academic Bank of Credits.pdf" target="_blank">Regulations governing the establishment and operation of Academic Bank of Credits</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">6</td>
+                            <td><a href="file_upload/aca_reg/circular of Ph.D Regulation and Draft of Ph.D. regulation copy -2022.pdf" target="_blank">Regulations of Ph.D. programme 2022-23.</a></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:center">7</td>
+                            <td><a href="file_upload/aca_reg/Circular of Draft Regulations for PG Diploma-Advance Dip-Diploma-Certificate Course w.e.f. 2022-23.pdf" target="_blank">PG Diploma-Advance Dip-Diploma-Certificate Course 2022-23</a></td>
                         </tr>
                     </table>
 

@@ -87,7 +87,7 @@
     	<div class="container">
     		<div class="row">  
     		<?php
-        	    if($_SESSION['unam']=='smart_tech'){?>
+        	    //if($_SESSION['unam']=='smart_tech'){?>
         		 <div class="col-md-3 col-lg-3 ftco-animate">
             		<div class="pricing-entry bg-light pb-1 text-center">
             			<div>
@@ -100,21 +100,23 @@
     	        		</div>
             		</div>
             	</div>
-        	    <div class="col-md-3 col-lg-3 ftco-animate">
+            	
+        	    <!--<div class="col-md-3 col-lg-3 ftco-animate">
             		<div class="pricing-entry bg-light pb-1 text-center">
             			<div>
             			    <?php
-            			        if($_SESSION['unam']=='smart_tech'){?>
+            			       //if($_SESSION['unam']=='smart_tech'){?>
     	        			        <h3 class="price"><a href="dept_view.php" style="color:#043BB1;font-size:18px">Department</a></h3>
-    	        			    <?php }
+    	        			    <?php/* }
     	        			    else{?>
     	        			        <h3 class="price"><a href="#" style="color:#043BB1;font-size:18px">Department</a></h3>
-    	        			    <?}?>
+    	        			    <?}*/?>
     	        		    <img src="images/dept1a.jpg" style="height: 60px;">
     	        		</div>
             		</div>
-            	</div>
-           
+            	</div>-->
+            <?php
+        	    if($_SESSION['unam']=='smart_tech'){?>
         	    <div class="col-md-3 col-lg-3 ftco-animate">
             		<div class="pricing-entry bg-light pb-1 text-center">
             			<div>
@@ -130,6 +132,14 @@
             		</div>
             	</div>
              <?}?>
+             <div class="col-md-3 col-lg-3 ftco-animate">
+            		<div class="pricing-entry bg-light pb-1 text-center">
+            			<div>
+            			    <h3 class="price"><a href="dept_view.php" style="color:#043BB1;font-size:18px">Department</a></h3>
+            			    <img src="images/dept1a.jpg" style="height: 60px;">
+            			</div>
+            		</div>
+            	</div>
             	<div class="col-md-3 col-lg-3 ftco-animate">
             		<div class="pricing-entry bg-light pb-1 text-center">
             			<div>
@@ -141,43 +151,35 @@
             	
             </div>
             <br>
-            <?php if($_SESSION['unam']=='smart_tech'){?>
+            
             <div class="row">  
         		 <div class="col-md-3 col-lg-3 ftco-animate">
             		<div class="pricing-entry bg-light pb-1 text-center">
             			<div>
-            			    <?php if($_SESSION['unam']=='smart_tech'){?>
-    	        			    <h3 class="price"><a href="announcement/announce.php" style="color:#043BB1;font-size:18px">Announcement</a></h3>
-    	        			<?}
-    	        			else {?>
-    	        			    <h3 class="price"><a href="#" style="color:#043BB1;font-size:18px">Announcement</a></h3>
-    	        			<?}?>
+    	        			<h3 class="price"><a href="announcement/announce.php" style="color:#043BB1;font-size:18px">Announcement</a></h3>
     	        		    <img src="images/ann1.jpg" style="height: 60px;">
     	        	    </div>
             		</div>
             	</div>
+            	<?php if($_SESSION['unam']=='smart_tech'){?>
             	<div class="col-md-3 col-lg-3 ftco-animate">
             		<div class="pricing-entry bg-light pb-1 text-center">
             			<div>
-            			    <?php if($_SESSION['unam']=='smart_tech'){?>
+            			    
     	        			    <h3 class="price"><a href="gallery/gallery.php" style="color:#043BB1;font-size:18px">Gallery</a></h3>
-    	        			<?}
+    	        			<?/*}
     	        			else{?>
     	        			    <h3 class="price"><a href="#" style="color:#043BB1;font-size:18px">Gallery</a></h3>
-    	        			<?}?>
+    	        			<?}*/?>
     	        		    <img src="images/gal1.jpg" style="height: 60px;">
     	        		</div>
             		</div>
             	</div>
+            	<?}?>
             	<div class="col-md-3 col-lg-3 ftco-animate">
             		<div class="pricing-entry bg-light pb-1 text-center">
             			<div>
-            			    <?php if($_SESSION['unam']=='smart_tech'){?>
-    	        			    <h3 class="price"><a href="news/news.php" style="color:#043BB1;font-size:18px">News & Events</a></h3>
-    	        			<?}
-    	        			    else{?>
-    	        			        <h3 class="price"><a href="#" style="color:#043BB1;font-size:18px">News & Events</a></h3>
-    	        			<?}?>
+            			    <h3 class="price"><a href="news/news.php" style="color:#043BB1;font-size:18px">News & Events</a></h3>
     	        		    <img src="images/news.jpg" style="height: 60px;">
     	        		</div>
             		</div>
@@ -185,18 +187,18 @@
             	<div class="col-md-3 col-lg-3 ftco-animate">
             		<div class="pricing-entry bg-light pb-1 text-center">
             			<div>
-    	        			<h3 class="price"><a href="#" style="color:#043BB1;font-size:18px">More Links</a></h3>
+    	        			<h3 class="price"><a href="more_link.php" style="color:#043BB1;font-size:18px">More Links</a></h3>
     	        		    <img src="images/upl2.jpg" style="height: 60px;">
     	        		</div>
             		</div>
             	</div>
             </div>
     	</div>
-    	<?}?>
+    	
     </section>
 
 		
-    <footer class="ftco-footer ftco-bg-dark ftco-section">      
+    <footer class="ftco-footer ftco-bg-dark ftco-section" style="position:fixed;bottom:0;left:0;width:100%">      
         <p style="color:#fff;text-align:center">Developed by: Smartec IT Solutions</p>
     </footer>
     

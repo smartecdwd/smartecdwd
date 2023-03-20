@@ -62,7 +62,7 @@
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-      <div class="col-sm-4" style="background-color:#e1ebea">
+      <div class="col-md-4 d-none d-sm-block col-sm-6" style="background-color:#e1ebea">
 	 <!-- <h5 style="text-align:center;color:#145DA0;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #145DA0;font-family:Alice"><b>ACADEMIC</b></h5>-->
 	    <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice;text-transform:uppercase;text-align:center"><b>Study Chairs (Peethas)</b></h5>
 	    <br>
@@ -91,7 +91,7 @@
       </div><br>
 <br>
 
-      <div class="col-sm-8">
+      <div class="col-sm-6 col-md-8">
           <h3 style="font-family:Trirong;color:#000; font-weight:600;padding:10px;text-align:center">Study Chairs (Peethas)</h3>
           <br>
         <ul class="nav nav-tabs nav-fill" id="myTab" role="tablist">

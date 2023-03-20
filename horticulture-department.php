@@ -19,7 +19,8 @@ include 'db_con.php';
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-      <div class="col-sm-3" style="background-color:#e1ebea">
+      <div class="col-md-3 d-none d-sm-block col-sm-6
+" style="background-color:#e1ebea">
 	  <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice"><b>FACILITIES</b></h5>
            <br>
 
@@ -52,38 +53,38 @@ include 'db_con.php';
       </div><br>
 <br>
 
-      <div class="col-sm-9 director_img">
+      <div class="col-md-9 col-sm-6 director_img">
         <h2 class="title_head" style="font-family:Trirong;text-align:center">Horticulture Department</h2>
         <hr>
 		<h5><b>MOVING WITH CHANGE</b></h5>
-		 <img src="" class="img-fluid"><br>
-<br>
-	<p>The department of Horticulture was established in 1949 associated with building department and became independent in the year 1957. The department was initially headed by Shri. G.S. Nanjundayya as Garden superintendent in the year 1958. At present department has independent building and a Nursery and is headed by <b>Dr. G.S. Mulgund</b> as a I/C. Horticulture Officer.</p>
-	<img src="" class="img-fluid"><br>
-<br>
-<p>The total area of the campus is about 750 acres. The department is involved in maintaining the aesthetic value of the Karnatak University, Campus and other constituent Colleges by continuously maintaining the Garden and development along with plantation extension activities in the campus for improving the carban sinks in the campus.</p>
-<img src="" class="img-fluid"><br>
-<br>
-<p>The department has a two nurseries established in area about 10 acres which also has a two Green houses. The nursery has more than 600 verities of plants and nearly about 10,000 potted plants. The plant propagation and other developmental work in these nurseries is continuous programme. The department also maintains the premises of the different constituent Colleges such as Karnatak College, University College of Education, Sir Shiddappa Kambali Law College, and University Public school and all Hostels of the Karnatak University.</p>
+		 <!--<img src="" class="img-fluid"><br>-->
+        <br>
+	    <p>The department of Horticulture was established in 1949 associated with building department and became independent in the year 1957. The department was initially headed by Shri. G.S. Nanjundayya as Garden superintendent in the year 1958. At present department has independent building and a Nursery and is headed by <b>Dr. G.S. Mulgund</b> as a I/C. Horticulture Officer.</p>
+	    <!--<img src="" class="img-fluid"><br>-->
+        <br>
+        <p>The total area of the campus is about 750 acres. The department is involved in maintaining the aesthetic value of the Karnatak University, Campus and other constituent Colleges by continuously maintaining the Garden and development along with plantation extension activities in the campus for improving the carban sinks in the campus.</p>
+        <!--<img src="" class="img-fluid"><br>-->
+        <br>
+        <p>The department has a two nurseries established in area about 10 acres which also has a two Green houses. The nursery has more than 600 verities of plants and nearly about 10,000 potted plants. The plant propagation and other developmental work in these nurseries is continuous programme. The department also maintains the premises of the different constituent Colleges such as Karnatak College, University College of Education, Sir Shiddappa Kambali Law College, and University Public school and all Hostels of the Karnatak University.</p>
 
 
-<img src="" class="img-fluid"><br>
-<br>
-<h5><b>FUNCTIONS, ACTIVITIES AND SERVICES</b></h5>
-<ol style="font-family:Average;font-size:16px;color:#000;margin:10px;">
-<li>To maintain the clean, green, aesthetic value of the K.U. Campus, Botanic Garden and its constituent Colleges.</li>
-<li>To develop the campus as one of the nature lovers spots</li>
-<li>To provide the ample opportunities for students, employees and public for education and creating the awareness about the natural resources.</li>
-<li>To create recreation centre for the public.</li>
-<li>To develop the water harvesting strategies in the campus.</li>
-<li>To develop the K.U. Campus as a Biodiversity centre.</li>
-<li>To develop collaboration with forest department for plantation work.</li>
-<li>To provide the seedlings to the interested public.</li>
-<li>Supplying the potted plants on rent bases to different departments on demand.</li>
-<li>To develop and maintain the medicinal plant garden.</li>
-<li>To train the employees for Horticultural practices.</li>
-</ol>
-<br>
+        <!--<img src="" class="img-fluid"><br>-->
+        <br>
+        <h5><b>FUNCTIONS, ACTIVITIES AND SERVICES</b></h5>
+        <ol style="font-family:Average;font-size:16px;color:#000;margin:10px;">
+            <li>To maintain the clean, green, aesthetic value of the K.U. Campus, Botanic Garden and its constituent Colleges.</li>
+            <li>To develop the campus as one of the nature lovers spots</li>
+            <li>To provide the ample opportunities for students, employees and public for education and creating the awareness about the natural resources.</li>
+            <li>To create recreation centre for the public.</li>
+            <li>To develop the water harvesting strategies in the campus.</li>
+            <li>To develop the K.U. Campus as a Biodiversity centre.</li>
+            <li>To develop collaboration with forest department for plantation work.</li>
+            <li>To provide the seedlings to the interested public.</li>
+            <li>Supplying the potted plants on rent bases to different departments on demand.</li>
+            <li>To develop and maintain the medicinal plant garden.</li>
+            <li>To train the employees for Horticultural practices.</li>
+        </ol>
+        <br>
 
 
 <h5><b>STRUCTURE FACILITIES IN THE DEPARTMENT</b></h5>
@@ -186,7 +187,7 @@ include 'db_con.php';
 <li>Maintained the gardens of the Karnatak University constituent colleges.</li>
 </ol>
 
-<img src="" class="img-fluid"><br>
+    <!--<img src="" class="img-fluid"><br>-->
 <br>
 
 <h5><b>EXTENSION SERVICE</b></h5>

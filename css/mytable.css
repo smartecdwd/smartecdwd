@@ -18,6 +18,8 @@ and open the template in the editor.
   border: 1px solid #ddd;
   padding: 8px;
   text-align:left;
+  cursor:default;
+  font-size:15px;
 }
 
 #customers tr:nth-child(even){background-color: #f7f5f5;}
@@ -31,9 +33,12 @@ and open the template in the editor.
   color: #fff;
   font-family:"Exo";
   text-align:center;
-  font-family:14px;
+  font-family:16px;
 }
+
 #customers td a:hover{
     color:#7267CB;
     text-align:left;
+    font-size:15px;
 }
+

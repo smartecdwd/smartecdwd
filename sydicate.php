@@ -27,7 +27,7 @@
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-      <div class="col-sm-3" style="background-color:#eee">
+      <div class="col-md-3 d-none d-sm-block col-sm-6" style="background-color:#eee">
 	  <h5 style="text-align:center;color:#145DA0;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #145DA0;font-family:Alice"><b>ADMINISTRATION</b></h5>
            <br>
 
@@ -52,7 +52,7 @@
       </div><br>
 <br>
 
-      <div class="col-sm-9">
+      <div class="col-md-9 col-sm-6">
 
 
 

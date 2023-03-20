@@ -487,6 +487,7 @@
 							<a class="dropdown-item" href="RTI-act-2005-PIO.php">RTI Act 2005 / PIO's</a>
 							<a class="dropdown-item" href="UGC-regulations.php">UGC Regulations</a>	
 							<a class="dropdown-item" href="rti.php">RTI</a>	
+                                          <a class="dropdown-item" href="http://kud.ac.in.eresult.online/">E Result</a	
 							
 										
 						</div>

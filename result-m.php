@@ -43,7 +43,7 @@
                                 <select class="form-control" name="deg" id="deg" style="font-size:13px" required>
                                     <option value="">(Select)</option>
                                     <option value="UG">UG</option>
-                                    <option value="PG">PG</option>
+                                    <!--<option value="PG">PG</option>-->
                                 </select>
                             </div>
                         </div>

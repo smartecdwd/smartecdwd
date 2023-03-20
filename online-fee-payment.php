@@ -52,18 +52,23 @@ include 'db_con.php';
 
 </tr>
 <tr>
-<td style="text-align:center; width:10%; ">1</td>
-<td ><a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm?corpID=379942" target="_blank">KARNATAK UNIVERSITY FEE</a></td>
+    <td style="text-align:center; width:10%; ">1</td>
+    <td><a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm?corpID=379942" target="_blank">KARNATAK UNIVERSITY FEE (State Bank of India)</a></td>
+    <!--<a href="online-fee-pay1.phphttps://www.onlinesbi.com/sbicollect/icollecthome.htm?corpID=379942" target="_blank">KARNATAK UNIVERSITY FEE</a-->
+</tr>
+<tr>
+    <td style="text-align:center; width:10%; ">2</td>
+    <td><a href="https://payments.billdesk.com/bdcollect/bd/kud/5352" target="_blank">KARNATAK UNIVERSITY FEE (Canara Bank)</a></td>
+</tr>
+<tr>
+    
+    <td style="text-align:center; width:10%; ">3</td>
+    <td><a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm?corpID=564870" target="_blank">KARNATAK UNIVERSITY EXAMINATION FEE</a></td>
 
 </tr>
 <tr>
-<td style="text-align:center; width:10%; ">2</td>
-<td><a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm?corpID=564870" target="_blank">KARNATAK UNIVERSITY EXAMINATION FEE</a></td>
-
-</tr>
-<tr>
-<td style="text-align:center; width:10%; ">3</td>
-<td><a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm?corpID=549660" target="_blank">KUD, SCHOOL OF CORRESPONDENCE EDUCATION</a></td>
+    <td style="text-align:center; width:10%; ">4</td>
+    <td><a href="https://www.onlinesbi.com/sbicollect/icollecthome.htm?corpID=549660" target="_blank">KUD, SCHOOL OF CORRESPONDENCE EDUCATION</a></td>
 
 </tr>
 </table>

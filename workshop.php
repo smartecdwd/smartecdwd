@@ -14,7 +14,8 @@ include 'db_con.php';
 <div class="inner_page">
     <div class="container">
         <div class="row border_around p-3 text-justify">
-            <div class="col-sm-3" style="background-color:#e1ebea">
+            <div class="col-md-3 d-none d-sm-block col-sm-6
+" style="background-color:#e1ebea">
 	            <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice"><b>FACILITIES</b></h5>
                 <br>
 
@@ -43,7 +44,7 @@ include 'db_con.php';
             </div>
             
 
-            <div class="col-sm-9 director_img" style="height:101%">
+            <div class="col-md-9 col-sm-6 director_img" style="height:101%">
                 <h2 class="title_head" style="font-family:Domine;text-align:center">Workshop</h2>
                 <hr>
 		        <img src="images/facility/workshop/workshop2.jpg" class="img-fluid" style="height:30%"><br>

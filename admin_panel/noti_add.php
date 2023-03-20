@@ -1,18 +1,19 @@
 <?php
     session_start();
   
-    if(time() - $_SESSION['user_start'] > 600)
+   /* if(time() - $_SESSION['user_start'] > 600)
     {
-        session_destory();
+       // session_destory();
         echo "<script>window.location.href='https://kud.ac.in/admin_panel';</script>";
     }
     
     if(isset($_SESSION['uid'])==false)
     {
         echo "<script>window.location.href='https://kud.ac.in/admin_panel';</script>";
-    }
+    }*/
     
     include "db_con.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -166,6 +167,7 @@
                                             <option value='A'>Academic</option>
                                             <option value='E'>Exam</option>
                                             <option value='EV'>Events</option>
+                                            <option value='AD'>Admission 2022-23</option>
                                         </select>
                                     </div>
                                 </div>
@@ -281,9 +283,11 @@
         $nty=trim($_REQUEST['typ']);
       
         
-        if(($_FILES['f1']['size'][0]>0) && ($_FILES['f1']['type'][0] == "application/pdf"))
-        {
+        //if(($_FILES['f1']['size'][0]>0) && ($_FILES['f1']['type'][0] == "application/pdf"))
+      //  if(($_FILES['f1']['size'][0]>0))
+    //    {
             $qry="insert into notification (ndate,nname,ndesc,nstatus,ntype) values ('$nd','$nm','$ndes','$nst','$nty')";
+            echo $qry;
             $res=mysqli_query($conn,$qry);
         
             $qry="select max(nid) as nid from notification";
@@ -293,7 +297,8 @@
         
             for($i=0;$i<10;$i++)
             {
-                if(($_FILES['f1']['size'][$i]>0) && ($_FILES['f1']['type'][$i] == "application/pdf"))
+                //if(($_FILES['f1']['size'][$i]>0) && ($_FILES['f1']['type'][$i] == "application/pdf"))
+                if($_FILES['f1']['name'][$i]!="")
                 {
                     
                     $ft=trim($_REQUEST['t1'][$i]);
@@ -310,11 +315,11 @@
                    
                     
                     $qry="insert into notification_file (nid,fname) values(".$row['nid'].",'$file')";
-                    //echo $qry;
+                    echo $qry;
                     $res=mysqli_query($conn,$qry);
                 }
             }
-        }
+        //}
        unset($_POST['submit']);
       echo"<script>window.location.href='notif.php';</script>";
     }    

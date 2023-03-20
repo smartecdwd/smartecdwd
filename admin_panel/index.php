@@ -140,8 +140,8 @@
 <?php
     if(isset($_POST['submit']))
     {
-        $un=$_REQUEST['un'];
-        $pw=($_REQUEST['pwd']);
+        $un=mysqli_real_escape_string($conn,$_REQUEST['un']);
+        $pw=mysqli_real_escape_string($conn,$_REQUEST['pwd']);
         
         $qry="select * from user_info where uname='$un' and pwd='$pw'";
         //echo $qry;

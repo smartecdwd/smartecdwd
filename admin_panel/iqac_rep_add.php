@@ -102,7 +102,7 @@
                                                 <option>(Select)</option>
                                                 <option>AAA</option>
                                                 <option>AQAR</option>
-                                                <option>IQAC Annual</option>
+                                                <option>Annual</option>
                                                 <option>KU Annual</option>
                                                 <option>SSR</option>
                                                 <option>NAAC Reports</option>

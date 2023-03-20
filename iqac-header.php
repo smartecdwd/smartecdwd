@@ -14,42 +14,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
 
-    <!-- Css -->
-    <link href="css/bootstrap.css" rel="stylesheet" />
-    <link href="css/kud1.css" rel="stylesheet" />
-     <link href="css/uikit.css" rel="stylesheet" />
-    <link href="css/lightbox.css" rel="stylesheet" />
-    <link href="css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/owl.carousel.min.css" rel="stylesheet" />
-     <link href="css/owl.theme.green.css" rel="stylesheet" />
-    <link href="css/animate.css" rel="stylesheet" />
+        <!-- Css -->
+    <link href="https://www.kud.ac.in/css/bootstrap.css" rel="stylesheet" />
+    <link href="https://www.kud.ac.in/css/kud1.css" rel="stylesheet" />
+     <link href="https://www.kud.ac.in/css/uikit.css" rel="stylesheet" />
+    <link href="https://www.kud.ac.in/css/lightbox.css" rel="stylesheet" />
+    <link href="https://www.kud.ac.in/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://www.kud.ac.in/css/owl.carousel.min.css" rel="stylesheet" />
+     <link href="https://www.kud.ac.in/css/owl.theme.green.css" rel="stylesheet" />
+    <link href="https://www.kud.ac.in/css/animate.css" rel="stylesheet" />
 	
-	<link href="css/font-awesome.min.css" rel="stylesheet">
-	<link href="css/iconsmind.css" rel="stylesheet" />
-	<link href="css/mytable.css" rel="stylesheet" />
+	<link href="https://www.kud.ac.in/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://www.kud.ac.in/css/iconsmind.css" rel="stylesheet" />
+	<link href="https://www.kud.ac.in/css/mytable.css" rel="stylesheet" />
      <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.html"/>
-    <link rel="icon" type="image/png" sizes="32x32" href="image/fevicon.png"/>
-    <link rel="icon" type="image/png" sizes="16x16" href="image/fevicon.png"/>
+    <link rel="icon" type="https://www.kud.ac.in/image/png" sizes="32x32" href="https://www.kud.ac.in/image/fevicon.png"/>
+    <link rel="icon" type="https://www.kud.ac.in/image/png" sizes="16x16" href="https://www.kud.ac.in/image/fevicon.png"/>
     <link rel="manifest" href="site.html"/>
     <meta name="msapplication-TileColor" content="#da532c"/>
     <meta name="theme-color" content="#ffffff"/>
     <!-- fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
-
-<link href="css/custom.css" rel="stylesheet">
-
-<script src="js/jquery-3.2.1.min.js"></script>
-
-
-<script src="js/script.js"></script>
-
-<script src="js/testjquery.js"></script>
-
-
-<script type="text/javascript" src="jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
+    
+    <link href="css/css/search.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://www.kud.ac.in/css/custom.css" rel="stylesheet">
+    
+    <script src="https://www.kud.ac.in/js/jquery-3.2.1.min.js"></script>
+    
+    
+    <script src="https://www.kud.ac.in/js/script.js"></script>
+    
+    <script src="https://www.kud.ac.in/js/testjquery.js"></script>
+    
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
 
  <style type="text/css">
         
@@ -62,7 +64,7 @@
             color: #ffffff;
             text-align: center;
             line-height: 16px;
-            font-size: 12px;
+            font-size: 10pt;
             cursor: pointer;
         }
     </style>
@@ -71,6 +73,7 @@
         .containers {
             width: 1200px;
 			padding-left:85px;
+			background-color:#0099FF;
         }
 
        
@@ -85,16 +88,12 @@
     tr:first-child:hover {
         background-color:#fff;
         color:#000;}
-    .nav-item li a{
-        border-right:1px solid #fff;border-left:1px solid #fff;
-    }
 </style>
 
 <style>
         div#google_translate_element div.goog-te-gadget-simple {
             border: none;
             background-color: transparent;
-            */ background-color: #17548d; /*#e3e3ff*/
         }
 
             div#google_translate_element div.goog-te-gadget-simple a.goog-te-menu-value:hover {
@@ -111,7 +110,6 @@
 
         .goog-te-gadget-icon {
             display: none !important;
-            */ background: url("url for the icon") 0 0 no-repeat !important;
         }
 
         /*/* Remove the down arrow */
@@ -145,52 +143,56 @@
             top: 0px !important;
             font-family: Arial, Helvetica, sans-serif;
         }
+        /*@media print {
+            html, body {
+            display: none; /* Hide the whole page */
+        }*/
+    }
+
     </style>
-	  <script src="js/jcarousel.js" type="text/javascript"></script> 
-	  <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
-
-
-<script src="js/js/jquery.min.js" type="text/javascript"></script>
-    <script src="js/js/jquery-noconflict.js" type="text/javascript"></script>
-    <script src="js/js/jquery-migrate.min.js" type="text/javascript"></script>
-    <script src="js/js/k29405.js?v2.6.8" type="text/javascript"></script>
-    <script src="js/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="js/js/ytcpanel.js" type="text/javascript"></script>
-    <script src="js/js/jquery.miniColors.min.js" type="text/javascript"></script>
-    <script src="js/js/jquery.prettyPhoto.js" type="text/javascript"></script>
-    <script src="js/js/ytsticky.js" type="text/javascript"></script>
-    <script src="js/js/yt-script.js" type="text/javascript"></script>
-    <script src="js/js/jcarousel.js" type="text/javascript"></script>
-    <script src="js/js/jquery.mousewheel.js" type="text/javascript"></script>
-    <script src="js/js/jquery.touchwipe.1.1.1.js" type="text/javascript"></script>
-    <script src="js/js/jquery.megamenu.js" type="text/javascript"></script>
-    <script src="js/js/jquery.easing.1.3.js" type="text/javascript"></script>
-    <script src="js/js/touchswipe.min.js" type="text/javascript"></script>
-    <script src="js/js/acymailing_moduled263.js?v=492" type="text/javascript"></script>
-    <script src="js/js/modernizr.min.js" type="text/javascript"></script>
-    <script src="js/js/classie.js" type="text/javascript"></script>
-    <script src="js/js/photostack.js" type="text/javascript"></script>
-    <script src="js/js/jquery.sj_accordion.js" type="text/javascript"></script>
-    <script src="js/js/slider.js" type="text/javascript"></script>
-    <script src="js/js/jquery.cj-swipe.js" type="text/javascript"></script>
-    <script src="js/js/jquery-noconflict.js" type="text/javascript"></script>
-    <script src="js/js/jcarousel.js" type="text/javascript"></script>
-    <script src="js/js/jquery.cj-swipe.js" type="text/javascript"></script>
-    <script src="js/js/prettify.js" type="text/javascript"></script>
-    <script src="js/js/shortcodes.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/css/a076d05399.js" type="text/javascript"></script> 
+	<script src="https://www.kud.ac.in/js/jcarousel.js" type="text/javascript"></script> 
+	<link rel="stylesheet" href="https://www.kud.ac.in/css/bootstrap.min.css" type="text/css" />
+    
+    <script src="https://www.kud.ac.in/js/js/jquery.min.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery-noconflict.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery-migrate.min.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/k29405.js?v2.6.8" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/ytcpanel.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery.miniColors.min.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery.prettyPhoto.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/ytsticky.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/yt-script.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jcarousel.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery.mousewheel.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery.touchwipe.1.1.1.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery.megamenu.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery.easing.1.3.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/touchswipe.min.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/acymailing_moduled263.js?v=492" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/modernizr.min.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/classie.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/photostack.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery.sj_accordion.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/slider.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery.cj-swipe.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery-noconflict.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jcarousel.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/jquery.cj-swipe.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/prettify.js" type="text/javascript"></script>
+    <script src="https://www.kud.ac.in/js/js/shortcodes.js" type="text/javascript"></script>
 
 	
-<link href="css/css/vstyle.css" rel="stylesheet" type="text/css" />
-<link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Fredoka+One&family=Roboto+Slab&family=Signika:wght@500&family=Zen+Kurenaido&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Domine&family=Kanit:wght@300&family=PT+Serif&display=swap" rel="stylesheet" />
+    <link href="https://www.kud.ac.in/css/css/vstyle.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Fredoka+One&family=Rooooto+Slab&family=Signika:wght@500&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Domine&family=Kanit:wght@300&family=PT+Serif&display=swap" rel="stylesheet" />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
 
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
-
+    <link href="https://www.kud.ac.in/css/css/search.css" rel="stylesheet" type="text/css" />
 
 
 	
@@ -212,11 +214,15 @@
 .goog-te-gadget .goog-te-combo {
    color: blue !important;
 }
-
+/*.logo_bgs{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px !important; 
+    display: block;
+}*/
 @media print {
   #google_translate_element {display: none;}
 }
-
 
 @media screen and (min-width: 992px) {
     .search-box-div {
@@ -287,7 +293,7 @@
 }
 
 .header-strip {
-    background-image: url('./images/header-bg.jpg');
+    background-image: url('https://www.kud.ac.in/images/header-bg.jpg');
     background-repeat: repeat-x;
     height: 140px;
     background-position: 100% 100%;
@@ -351,6 +357,16 @@
   z-index: 100;
   border-top: 0;
 }
+
+.nav-item .nav-link{
+    display:block;
+}
+
+@media screen and (max-width: 767px) {
+/* .nav-item .nav-link{
+    text-align:left;
+    }*/   
+}
 </style>
 
 <script>
@@ -371,14 +387,36 @@
 		    }
 		};
 
-		stickyNav();
-		// and run it again every time you scroll
-		$(window).scroll(function() {
-			stickyNav();
-		});
+        if(screen.width > 900) {
+		    stickyNav();
+		    // and run it again every time you scroll
+		    $(window).scroll(function() {
+			    stickyNav();
+		    });
+        }
+        
+        $(".nav-item").on("click" ,function(e) {
+            // e.preventDefault();
+            if($(this).attr('data-wasopen') && $(this).attr('data-wasopen') == 'open') {
+                $(this).removeClass('open');
+                $(this).removeClass('show');
+                $('.dropdown-menu').css('display', 'none')
+                $(this).attr('data-wasopen', 'close');
+            } else {
+                $(this).attr('data-wasopen', 'open');
+                $(this).children('.dropdown-menu').css('display', 'block')
+            }
+            return false
+        });
+        
+        $(".dropdown-item, .nav-link").on("click", function(e) {
+            e.preventDefault();
+            window.location.href = $(this).attr("href"); 
+        });
 	});
 </script>
-<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script type="text/javascript">
 	function googleTranslateElementInit() {
 		new google.translate.TranslateElement({
@@ -386,9 +424,25 @@
 		layout: google.translate.TranslateElement
 		}, 'google_translate_element');
 	}
+	
+	function search_data(){
+        var dat=document.getElementById("txt_sh").value;
+        window.location.href="search_list.php?sh=" + dat;
+    }
+</script>
+<script>
+    $(".navbar-collapse a").click(function () {
+        $(".navbar-collapse").collapse("hide");
+    });
+</script>
+<script>
+    $("#navbar a:not(.dropdown-toggle)").click(function() {
+      $("#navbar").collapse("hide");
+    });
 </script>
 
-<body onselectstart="return false">
+<!--<body onselectstart="return false">-->
+<body oncontextmenu="return false;">
   <!-- Return to Top -->
 <!--<form name="langform">-->
 <header>
@@ -423,8 +477,8 @@
                 </div>
             </div>
         </div>
-	<nav class="navbar navbar-expand-lg navbar-dark bg_red" id="myNavbar" style="font-size:10px;">
-		<div class="container-fluid">
+	    <nav class="navbar navbar-expand-lg navbar-dark bg_red" id="myNavbar">
+        <div class="container-fluid">
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
     				<!--<span class="navbar-toggler-icon"></span> -->
     				<div class="bar1"></div>
@@ -432,32 +486,32 @@
     				<div class="bar3"></div>
   			</button>
 			
-			<div class="collapse navbar-collapse" id="mainNav" style="font-size:5px;">
-				<ul class="navbar-nav ml-auto nav-fill mx-auto"  style="font-size:10px;">
-					<li class="nav-item px-2">
-						<a href="index.php" class="nav-link" style="line-height:1.2em;font-size:13px; overflow: hidden; padding-top: 10px;  padding-right: 5px;  padding-bottom: 10px; ">Home</a>
+			<div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ml-auto nav-fill mx-auto">
+					<li class="nav-item px-3">
+						<a href="index.php" class="nav-link" >Home</a>
 						
 					</li>
-					<li class="nav-item px-2">
-						<a href="iqac.php" class="nav-link" style="line-height:1.2em;font-size:13px; overflow: hidden; padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px; ">About IQAC</a>
+					<li class="nav-item px-3">
+						<a href="iqac.php" class="nav-link">About IQAC</a>
 						
 					</li>
-					<li class="nav-item dropdown">
-						<a href="iqac.php" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="line-height:1.2em;font-size:13px;   padding: 10px 10px 10px 10px; overflow: hidden;" >IQAC Team&nbsp;</a>
+					<li class="nav-item dropdown px-3">
+						<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >IQAC Team&nbsp;</a>
 						<div class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="iqac-view-cur.php">Current</a>
 							<a class="dropdown-item" href="iqac-view.php">Former</a>		
 						</div>
 					</li>
-					<li class="nav-item px-2">
-						<a href="advisory-committe-members.php" class="nav-link"  style="line-height:1.2em;font-size:13px;  overflow: hidden; padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px; " >Advisory Committee</a>			
+					<li class="nav-item px-3">
+						<a href="advisory-committe-members.php" class="nav-link">Advisory Committee</a>			
 					</li>
-					<li class="nav-item">
-						<a href="activities-iqac.php" class="nav-link" style="line-height:1.2em;font-size:13px; overflow: hidden; padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px; ">Activities</a>
+					<li class="nav-item px-3">
+						<a href="activities-iqac.php" class="nav-link" >Activities</a>
 						
 					</li>
-					<li class="nav-item px-2 dropdown">
-						<a href="iqac.php" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="line-height:1.2em;font-size:13px;   padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px; overflow: hidden;">Feedback</a>
+					<li class="nav-item px-3 dropdown">
+						<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Feedback</a>
 						<div class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="feedback-stake-holders.php?nid=Stake Holders">Feedback of Stakeholders</a>
 							<a class="dropdown-item" href="feedback-stake-holders.php?nid=Teachers">Feedback of Teachers</a>		
@@ -468,12 +522,12 @@
 						</div>
 					</li>
 					
-					<li class="nav-item">
-						<a href="policies-guidelines.php" class="nav-link" style="line-height:1.2em;font-size:13px;   padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  overflow: hidden;">Policies & Guidelines</a>
+					<li class="nav-item px-3">
+						<a href="policies-guidelines.php" class="nav-link">Policies & Guidelines</a>
 						
 					</li>
-					<li class="nav-item px-2 dropdown">
-						<a href="iqac.php" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="line-height:1.2em;font-size:13px;   padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  overflow: hidden;">IQAC Reports</a>
+					<li class="nav-item px-3 dropdown">
+						<a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >IQAC Reports</a>
 						<div class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
 						    <a class="dropdown-item" href="iqac-annual-reports.php?nid=AQAR">AQAR </a>
 							<a class="dropdown-item" href="iqac-annual-reports.php?nid=AAA">AAA </a>
@@ -487,29 +541,28 @@
 						<a href="iqac-annual-reports.php" class="nav-link">Annual Reports</a>
 						
 					</li>-->
-					<li class="nav-item">
-						<a href="nirf.php" class="nav-link" style="line-height:1.2em;font-size:13px;   padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;;overflow: hidden;">NIRF</a>
+					<li class="nav-item px-3">
+						<a href="nirf.php" class="nav-link">NIRF</a>
 						
 					</li>
 					<!--<li class="nav-item px-2">
 						<a href="programme-outcomes.php" class="nav-link" style="line-height:1.2em;font-size:13px;   padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  border-right: 1px solid white;overflow: hidden;">Programme Outcomes</a>
 						
 					</li>-->
+					<li class="nav-item px-3">
+						<a href="ssr_cyc.php" class="nav-link" >SSR 4th Cycle</a>
+						
+					</li>
+					<li class="nav-item px-3">
+						<a href="best-practice.php" class="nav-link">Best Practices</a>
+						
+					</li>
 					<li class="nav-item px-2">
-						<a href="ssr_cyc.php" class="nav-link" style="line-height:1.2em;font-size:13px;   padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;overflow: hidden;">SSR 4th Cycle</a>
+						<a href="iqac-gallery.php" class="nav-link" >Gallery</a>
 						
 					</li>
-					<li class="nav-item">
-						<a href="best-practice.php" class="nav-link" style="line-height:1.2em;font-size:13px;   padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;;overflow: hidden;">Best Practices</a>
-						
-					</li>
-					<li class="nav-item px-2">
-						<a href="iqac-gallery.php" class="nav-link" style="line-height:1.2em;font-size:13px;   padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  overflow: hidden; text-decoration: none;">Gallery</a>
-						
-					</li>
-					<li class="nav-item">
-						<a href="iqac-misc.php" class="nav-link" style="line-height:1.2em;font-size:13px;   padding-top: 10px;  padding-right: 10px;  padding-bottom: 10px;  overflow: hidden; text-decoration: none;">Misc</a>
-						
+					<li class="nav-item px-3">
+						<a href="iqac-misc.php" class="nav-link">Misc</a>
 					</li>
 				</ul>
 			</div>

@@ -35,21 +35,23 @@
     <meta name="msapplication-TileColor" content="#da532c"/>
     <meta name="theme-color" content="#ffffff"/>
     <!-- fonts -->
-   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
-
-<link href="https://www.kud.ac.in/css/custom.css" rel="stylesheet">
-
-<script src="https://www.kud.ac.in/js/jquery-3.2.1.min.js"></script>
-
-
-<script src="https://www.kud.ac.in/js/script.js"></script>
-
-<script src="https://www.kud.ac.in/js/testjquery.js"></script>
-
-
-<script type="text/javascript" src="jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400,400i,700,700i" rel="stylesheet">
+    
+    <link href="css/css/search.css" rel="stylesheet" type="text/css" />
+    
+    <link href="https://www.kud.ac.in/css/custom.css" rel="stylesheet">
+    
+    <script src="https://www.kud.ac.in/js/jquery-3.2.1.min.js"></script>
+    
+    
+    <script src="https://www.kud.ac.in/js/script.js"></script>
+    
+    <script src="https://www.kud.ac.in/js/testjquery.js"></script>
+    
+    
+    <script type="text/javascript" src="jquery.min.js"></script>
 
  <style type="text/css">
         
@@ -141,6 +143,12 @@
             top: 0px !important;
             font-family: Arial, Helvetica, sans-serif;
         }
+        /*@media print {
+            html, body {
+            display: none; /* Hide the whole page */
+        }*/
+    }
+
     </style>
     <script src="https://www.kud.ac.in/css/a076d05399.js" type="text/javascript"></script> 
 	  <script src="https://www.kud.ac.in/js/jcarousel.js" type="text/javascript"></script> 
@@ -371,11 +379,32 @@
 		    }
 		};
 
-		stickyNav();
-		// and run it again every time you scroll
-		$(window).scroll(function() {
-			stickyNav();
-		});
+        if(screen.width > 900) {
+		    stickyNav();
+		    // and run it again every time you scroll
+		    $(window).scroll(function() {
+			    stickyNav();
+		    });
+        }
+        
+        $(".nav-item").on("click" ,function(e) {
+            // e.preventDefault();
+            if($(this).attr('data-wasopen') && $(this).attr('data-wasopen') == 'open') {
+                $(this).removeClass('open');
+                $(this).removeClass('show');
+                $('.dropdown-menu').css('display', 'none')
+                $(this).attr('data-wasopen', 'close');
+            } else {
+                $(this).attr('data-wasopen', 'open');
+                $(this).children('.dropdown-menu').css('display', 'block')
+            }
+            return false
+        });
+        
+        $(".dropdown-item, .nav-link").on("click", function(e) {
+            e.preventDefault();
+            window.location.href = $(this).attr("href"); 
+        });
 	});
 </script>
 
@@ -387,8 +416,22 @@
 		layout: google.translate.TranslateElement
 		}, 'google_translate_element');
 	}
+	
+	function search_data(){
+        var dat=document.getElementById("txt_sh").value;
+        window.location.href="search_list.php?sh=" + dat;
+    }
 </script>
-
+<script>
+    $(".navbar-collapse a").click(function () {
+        $(".navbar-collapse").collapse("hide");
+    });
+</script>
+<script>
+    $("#navbar a:not(.dropdown-toggle)").click(function() {
+      $("#navbar").collapse("hide");
+    });
+</script>
 <!--<body onselectstart="return false">-->
 <body oncontextmenu="return false;">
 <!-- Return to Top -->
@@ -405,11 +448,11 @@
                             </div>
                             <div class="logo-text">
                                 <div class="d-flex align-items-center"><img src="https://www.kud.ac.in/images/logo-text.jpg" /></div>
-                                <div class="text-right d-none d-sm-none d-md-none d-lg-block search-box-div">
+                                <div class="text-right d-none d-sm-none d-md-none d-lg-block search-box-div" id="search">
                                     <div class="input-group mb-3" style="margin-top: 10px; height: 34px; margin-right: 10px">
-                                        <input type="text" class="form-control" style="height: 28px; width: 110px" placeholder="Search" aria-label="Search" aria-describedby="my-search">
+                                        <input type="text" id="txt_sh" name="txt_sh" class="form-control" style="height: 28px; width: 110px" placeholder="Search" aria-label="Search" aria-describedby="my-search">
                                         <div class="input-group-append" style="height: 28px">
-                                            <span class="input-group-text cursor-btn" style="background: #17a2b8" id="my-search"><i style="color:#fff" class="fa fa-search"></i></span>
+                                            <span class="input-group-text cursor-btn" style="background: #17a2b8" id="my-search"><i style="color:#fff" class="fa fa-search" onclick="search_data()"></i></span>
                                         </div>
                                     </div>
                                     <div class="d-flex align-items-center justify-content-between" style="height: 45px;">
@@ -447,7 +490,7 @@
                             </div>
                         </li>
                         <li class="nav-item px-2 dropdown">
-                            <a href="chancellor.php" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administration&nbsp;</a>
+                            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Administration&nbsp;</a>
                             <div class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
                                 <a class="dropdown-item" href="https://www.kud.ac.in/chancellor.php">Chancellor</a>
                                 <a class="dropdown-item" href="https://www.kud.ac.in/pro-chancellor.php">Pro-Chancellor</a>
@@ -458,7 +501,7 @@
                                 <a class="dropdown-item" href="https://www.kud.ac.in/the-syndicat.php">The Syndicate</a>
                                 <a class="dropdown-item" href="https://www.kud.ac.in/syndicate-proceedings.php">Syndicate Proceedings</a>
                                 <a class="dropdown-item" href="https://www.kud.ac.in/the-academic-council.php">The Academic Council</a>
-                                <a class="dropdown-item" href="https://www.kud.ac.in/academic-council.php">Academic Council Proceedings</a>
+                                <a class="dropdown-item" href="https://www.kud.ac.in/academic-proceedings.php">Academic Council Proceedings</a>
                                 <!-- <a class="dropdown-item" href="proceeding.php">Proceeding</a> -->
                                 <a class="dropdown-item" href="https://www.kud.ac.in/the-finance-committee.php">The Finance Committee</a>
                                 <a class="dropdown-item" href="https://www.kud.ac.in/deans-of-faculty.php">Deans of Faculty</a>
@@ -486,8 +529,9 @@
                                 <a class="dropdown-item" href="https://www.kud.ac.in/exam-section-regulations.php">Regulations</a>
                                 <a class="dropdown-item" href="https://www.kud.ac.in/results.php">Result</a>
                                 <a class="dropdown-item" href="https://www.kud.ac.in/application-entry-for-colleges.php">Application Entry For Colleges</a>
-                                <a class="dropdown-item" href="https://www.kud.ac.in/pg_sub_cod.php">Subject Code for PG</a>
-                                <a class="dropdown-item" href="https://www.kud.ac.in/ug_sub_cod.php">Subject Code for UG</a>
+                                <a class="dropdown-item" href="https://www.kud.ac.in/sub_code_pg.php">Subject Code for PG</a>
+                                <a class="dropdown-item" href="https://www.kud.ac.in/sub_code_ug.php">Subject Code for UG</a>
+                                <a class="dropdown-item" href="https://www.kud.ac.in/exam.php">Apply For Convocation 2023 </a>
                             </div>
                         </li>
                         <li class="nav-item px-2 dropdown">
@@ -528,10 +572,13 @@
                         <li class="nav-item px-2 dropdown">
                             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Research&nbsp;</a>
                             <div class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="https://www.kud.ac.in/research-pol.php">Research Policies</a>
+                                <a class="dropdown-item" href="https://www.kud.ac.in/research-sg.php">Research Seed Grant</a>
+                                <a class="dropdown-item" href="https://www.kud.ac.in/research-dp.php">Departmental Projects</a>
+                                <a class="dropdown-item" href="https://www.kud.ac.in/ind-fac.php">Individual Faculty Projects</a>
                                 <a class="dropdown-item" href="https://www.kud.ac.in/research-facilities.php">Research Facilities</a>
-                                <a class="dropdown-item" href="https://www.kud.ac.in/research-project.php">Research Project</a>
-                                <a class="dropdown-item" href="https://www.kud.ac.in/research-centres.php">Research Centres</a>
-                                <a class="dropdown-item" href="https://www.kud.ac.in/fellowship.php">Fellowship</a>
+                                <a class="dropdown-item" href="https://www.kud.ac.in/pmeb.php">PMEB</a>
+                                <a class="dropdown-item" href="https://www.kud.ac.in/notifications-circular.php?nid=531">MoU</a>
                             </div>
                         </li>
                         <li class="nav-item px-2 dropdown">
@@ -567,16 +614,20 @@
                                 <a class="dropdown-item" href="https://www.kud.ac.in/academic.php">Academic </a>	
                                 <a class="dropdown-item" href="https://www.kud.ac.in/events.php">Events</a>
                                 <a class="dropdown-item" href="https://www.kud.ac.in/tenders.php">Tenders </a>	
+                                <a class="dropdown-item" href="https://www.kud.ac.in/adm_yr.php">Admission 2022-23  </a>	
                             </div>
                         </li>
                         <li class="nav-item px-2 dropdown">
                             <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More Links&nbsp;</a>
                             <div class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
                                 <!--<a class="dropdown-item" href="email-directory.php">Email Directory</a>-->
+                                <a class="dropdown-item" href="https://www.kud.ac.in/good_gov.php">Good Governance Initiatives (ಸುಶಾಸನ)</a>
+                                <!--<a class="dropdown-item" href="https://www.kud.ac.in/good_gov_init.php">Good Governance Initiatives (ಸುಶಾಸನ)</a>-->
                                 <a class="dropdown-item" href="https://www.kud.ac.in/statutes-acts.php">Statutes and Acts</a>	
-                                <a class="dropdown-item" href="https://www.kud.ac.in/RTI-act-2005-PIO.php">RTI Act 2005 / PIO's</a>
+                                <!--<a class="dropdown-item" href="https://www.kud.ac.in/RTI-act-2005-PIO.php">RTI Act 2005 / PIO's</a>-->
                                 <a class="dropdown-item" href="https://www.kud.ac.in/UGC-regulations.php">UGC Regulations</a>	
                                 <a class="dropdown-item" href="https://www.kud.ac.in/rti.php">RTI</a>	
+                                <a class="dropdown-item" href="https://www.kud.ac.in/fin_officer.php">Finance Section</a>
                             </div>
                         </li>
                         <!--<li class="nav-item ">

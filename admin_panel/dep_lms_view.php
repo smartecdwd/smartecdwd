@@ -57,7 +57,13 @@
             CKEDITOR.replace( 'text_editor1' );	
         });
     </script>
-   
+    <script>
+        function confirm_del(fid){
+            var conf = confirm('Are you sure want to delete this record?');
+            if(conf)
+                window.location='lms_del.php?nd=' + fid;
+        }
+    </script>
     <style>
         #nav-link li a:hover{
             color:red;
@@ -129,6 +135,7 @@
                                                 {
                                    	                echo "<tr>
                                    	                    <td style='color:#1f75fe'><a href='dept/lms/".$row['fname']."' target='_blank'>".$row['fname']."</a> </td>
+                                                        <td><a href='lms_del.php' onclick='return confirm_del(".$row["dl_fid"].")' style='float:right;'><img src='images/del3.png' style='width:80%'> </a>
                                    	                </tr>";
                                    	            } ?>
                                    	    </table>

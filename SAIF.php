@@ -19,7 +19,8 @@ include 'db_con.php';
 <div class="inner_page">
     <div class="container">
         <div class="row border_around p-3 text-justify">
-            <div class="col-sm-3" style="background-color:#e1ebea">
+            <div class="col-md-3 d-none d-sm-block col-sm-6
+" style="background-color:#e1ebea">
 	            <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice"><b>FACILITIES</b></h5>
                 <br>
                 <div class="vertical-menu" style="width:100%">
@@ -46,7 +47,7 @@ include 'db_con.php';
                 </div>
             </div><br>
             <br>
-            <div class="col-sm-9 director_img">
+            <div class="col-md-9 col-sm-6 director_img">
                 <h2 class="title_head" style="font-family:Trirong;text-align:center">Sophisticated Analytical Instrument Facilty (SAIF)</h2>
                 <hr>
 		        <img src="images/facility/saif/saif.jpg" class="img-fluid"><br>
@@ -65,8 +66,13 @@ include 'db_con.php';
                 	<li>X-Ray Diffractometer (Powder) with accessories</li>
                 	<li>CD Spectrometer</li>
 	        	</ol>
-	            <br>
-                <p>These instruments are operated and maintained by the following dedicated and qualified staff. For details contact the following:</p>
+	            <p class="mt=4">
+	                The facilities provided by the SAIF may be utilized by any user/organization on payment of nominal charges. The details about the procedure for the submission of the samples and the charges for sample analysis can be obtained from the University website (www.kud.ac.in) or from SAIF centre, Karnatak University, Dharwad. Online registration and online payment is mandatory.  
+	            </p>
+	            <p class="mt=4">
+	                The day-to-day functioning of the SAIF is overseen by Prof. J Seetharamappa Head, SAIF. The Facilities Management Committee (FMC) oversees and guides the activities of the SAIF.
+	            </p>
+                <!--<p class="mt-4">These instruments are operated and maintained by the following dedicated and qualified staff. For details contact the following:</p>
                 <div class="table-responsive">
 		            <table width="80%"  id="customers">
                         <tr style="font-size:13px">
@@ -102,51 +108,47 @@ include 'db_con.php';
 
         		<p>The facilities provided by the SAIF may be utilized by any user/organization on payment of nominal charges. The details about the procedure for the submission of the samples and the charges for sample analysis can be obtained from the University website (www.kud.ac.in) or from SAIF centre, Karnatak University, Dharwad </p>
 		        <p>The day-to-day functioning of the SAIF is overseen by Prof. J Seetharamappa Head, SAIF. The Facilities Management Committee (FMC) oversees and guides the activities of the SAIF.</p>
-		        <br>
-		        <h5 style="color:#0066FF; "><b>1. 400 MHz FT-NMR Spectrometer (Model: JNM- ECZ 400S)</b></h5>
-		        <img src="images/facility/saif/saif2.jpg" class="img-fluid"><br>
-                <br>
-        		<h6 style="color:#003399;font-size:17px"><b>SPECIFICATIONS:</b></h6>
+		        <br>-->
+		        <h5 class="mt-4" style="color:#0066FF; "><b>Payment of Service / Analysis Charges</b></h5>
+		        <p class="mt-4">
+		            For <b>DST‐SAIF facilities</b>: Account holder: <b>SAIF KUD USER CHARGES ACCOUNT</b>,SB A/c No. <b>12062010023433</b>, Canara Bank; Karnatak University Campus, Dharwad. (IFSC:CNRB0011206).
+		        </p>
+		        <h5 class="mt-4" style="color:#0066FF; "><b>1. 400 MHz FT-NMR Spectrometer (Model: JNM- ECZ 400S)</b></h5>
+		        <img src="images/facility/saif/saif2.jpg" class="img-fluid mt-2">
+                
+        		<h6 class="mt-3" style="color:#003399;font-size:17px"><b>SPECIFICATIONS:</b></h6>
         		<p><b>Auto Tune Probe:</b> With auto tuning unit, automatically tuning is done for multiple nuclei</p>
-        		<p><b>Observations Nuclei:</b> 1H, 13C, 19F, 31P to 15N, 39K and 109Ag</p>
+        		<p><b>Observations Nuclei:</b> <sup>1</sup>H, <sup>13</sup>C, <sup>19</sup>F, <sup>31</sup>P to <sup>15</sup>N, <sup>39</sup>K and <sup>109</sup>Ag</p>
         		<p><b>Type of Experiments:</b> 1D and 2D NMR spectra of all active nuclei, DEPT, APT, Cosy, Cosy with or without gradient, TOCSY,NOESY, HMQC and HMBC</p>
         		
-        		<br>
-        		<h5 style="color:#0066FF; "><b>2. SCANNING ELECTRON MICROSCOPE (SEM) (Model: JSM-IT500)</b></h5>
-        		<img src="images/facility/saif/saif3.jpg" class="img-fluid"><br>
-                <br>
-	            <h6 style="color:#003399;font-size:17px "><b>SPECIFICATIONS:</b></h6>
+        		
+        		<h5 class="mt-4" style="color:#0066FF; "><b>2. SCANNING ELECTRON MICROSCOPE (SEM) (Model: JSM-IT500)</b></h5>
+        		<img src="images/facility/saif/saif3.jpg" class="img-fluid mt-2">
+                
+	            <h6 class="mt-3" style="color:#003399;font-size:17px "><b>SPECIFICATIONS:</b></h6>
 		
 		        <p><b>Resolution:</b>	High vacuum mode: 3.0 nm (30 kV) 15.0 nm (1.0 kV) 
                         Low vacuum mode: 4.0 nm (30 kV BED)
                 </p>
                 <p><b>Accelerating Voltage:</b>	From 0.3KV-30KV in 1KV step</p>
-                <p><b>Probe Current:</b>	1 pA to 1 &micro;A</p>
-                <p><b>Pressure:</b>	10-650 Pa</p>
                 <p><b>Magnification:</b>	8X (WD 48mm) to 300000X</p>
-                <p><b>Image Modes:</b>	SEI, BEI</p>
                 <p><b>Detector:</b>	Secondary Electron Detector (SED), Backscattered Electron Detector (BED), Low Vacuum Secondary Electron Detector (LSED), Energy Dispersive X-ray Spectrometer (EDS)</p>
-                <p><b>EDS Related:</b>	Detectable elements Be ~ U
-                EDS Functions like Spectral analysis, Qualitative &amp; Quantitative analysis, Line analysis (horizontal line, specific direction line), Elemental mapping
-                </p>
-                <p><b>Maximum loadable Specimen size:</b>	50mm dia. X 25mm thick</p>
-                <p><b>Tilt:</b>	 -10 to 900</p>
                 <p><b>Accessories:</b>	Critical point drier, Ion sputter system, Carbon coating unit</p>
-                <br>
-                <h5 style="color:#0066FF; "><b>3. X-ray Diffractometer (Powder) (Model: SmartLab SE)</b></h5>
-                		<img src="images/facility/saif/saif4.jpg" class="img-fluid"><br>
-                <br>
-		        <h6 style="color:#003399; font-size:17px"><b>SPECIFICATIONS:</b></h6>
+                
+                <h5 class="mt-4" style="color:#0066FF; "><b>3. X-ray Diffractometer (Powder) (Model: SmartLab SE)</b></h5>
+                    <img src="images/facility/saif/saif4.jpg" class="img-fluid mt-2">
+                
+		        <h6 class="mt-3" style="color:#003399; font-size:17px"><b>SPECIFICATIONS:</b></h6>
                 <p>Fully automated alignment under computer control<br>
                     SAXS capabilities<br>
                     Optional D/teXUltra high-speed, position-sensitive detector system<br>
                     2&Theta;: 2&#176; to 150&#176;<br>
                 </p>
-                <br>
-                <h5 style="color:#0066FF; "><b>4.  CD Spectrometer (Model: J-1500, Make: Jasco)</b></h5>
-                <img src="images/facility/saif/saif5.jpg" class="img-fluid"><br>
-                <br>
-                <h6 style="color:#003399; "><b>SPECIFICATIONS:</b></h6>
+               
+                <h5 class="mt-4" style="color:#0066FF; "><b>4.  CD Spectrometer (Model: J-1500, Make: Jasco)</b></h5>
+                <img src="images/facility/saif/saif5.jpg" class="img-fluid mt-2"><br>
+                
+                <h6 class="mt-3"  style="color:#003399; "><b>SPECIFICATIONS:</b></h6>
                 <p>Xenon arc lamp source <br>  
                     Two quartz cell path lengths, 1mm and 1cm possible<br>
                     Temperature ramping (-40o to 130oC) and thermal denaturation for screening binding<br>
@@ -169,40 +171,76 @@ include 'db_con.php';
                             <th>Private Industry/Research Organizations/National Labs / PSU</th>
                         </tr>
                         <tr style="font-size:12px;">
-                            <td align="center">1</td>
-                            <td>FT-NMR Spectrometer</td>
-                            <td>Proton, carbon, D2O exchange and other nuclei, 2D NMR</td>
-                            <td>150/- per sample for 30 min (Including Solvent Charges)</td>
-                            <td>175/- per Analysis for 30 min Analysis for 30 min (Including Solvent Charges)+18% GST</td>
-                            <td>600/- per Analysis for 30 min Analysis for 30 min (Including Solvent Charges)+18% GST</td>
+                            <td rowspan="3" align="center">1</td>
+                            <td rowspan="3"><b>SEM with EDS (JEOL make, JSM-IT500LA)</b> <br>
+                                    Staff in charge: Mr. Raju Shivalli,<br> 8217289503<br>
+                                    E-mail:<a href="mailto:sem.saifkud@gmail.com">sem.saifkud@gmail.com</a>
+                            </td>
+                            <td>SEM Imaging </td>
+                            <td>200/-</td>
+                            <td>400/- +18% GST</td>
+                            <td>600/- +18% GST</td>
+                        </tr>
+                        <tr>
+                            <td>EDS </td>
+                            <td>100/-</td>
+                            <td>200/- +18% GST</td>
+                            <td>250/- +18% GST</td>
+                        </tr>
+                        <tr>
+                            <td>Mapping </td>
+                            <td>150/-</td>
+                            <td>250/- +18% GST</td>
+                            <td>300/- +18% GST</td>
                         </tr>
                         <tr style="font-size:12px;">
                             <td rowspan="2" align="center">2</td>
-                            <td rowspan="2">SCANNING ELECTRON MICROSCOPE (SEM)</td>
-                            <td align="center">SEM Imaging</td>
-                            <td align="center"> 150/- </td>
-                            <td align="center"> 300+18% GST </td>
-                            <td align="center"> 500+18% GST </td>
+                            <td rowspan="2">
+                                <b>Powder X-ray Diffractometer (Smart lab SE)</b><br> 
+                                Staff in charge: Mr. Akash Badami,<br>
+                                8050122306,<br>
+                                Email:<a href="mailto:akashcool388@gmail.com">akashcool388@gmail.com</a>
+                            </td>
+                            <td align="center">XRD </td>
+                            <td align="center"> 200/- </td>
+                            <td align="center"> 400/- +18% GST </td>
+                            <td align="center"> 200/- +18% GST </td>
                         </tr>
                             <tr style="font-size:12px;">
-                            <td align="center"> SEM with EDS </td>
-                            <td align="center"> 250/- </td>
-                            <td align="center"> 500+18% GST </td>
-                            <td align="center"> 600+18% GST </td>
+                            <td align="center">Phase Identification </td>
+                            <td align="center"> 300/- </td>
+                            <td align="center"> 500/- +18% GST </td>
+                            <td align="center"> 300/- +18% GST </td>
                         </tr>
                         <tr style="font-size:12px;">
-                            <td align="center">3</td>
-                            <td> X-ray Diffractometer (Powder) </td>
-                            <td align="center"> XRD </td>
+                            <td rowspan="2" align="center">3</td>
+                            <td rowspan="2"><b>400 MHz FT-NMR (JEOL make JNM-ECZ400S)</b> <br>
+                                Staff in charge: Mr. Pavan Bennur,<br>
+                                7795979950
+                                Email:<a href="mailto:111994benz@gmail.com">111994benz@gmail.com</a>
+                            </td>
+                            <td align="center"> Proton </td>
                             <td align="center"> 150/- </td>
-                            <td align="center"> 300+18% GST </td>
-                            <td align="center"> 400+18% GST </td>
+                            <td align="center"> 300/- +18% GST </td>
+                            <td align="center"> 400/- +18% GST </td>
+                        </tr>
+                        <tr>
+                            <td align="center">Proton & Carbon spectra </td>
+                            <td align="center"> 350/- </td>
+                            <td align="center"> 400/- +18% GST </td>
+                            <td align="center"> 800/- +18% GST </td>
                         </tr>
                         <tr style="font-size:12px;">
-                            <td align="center">4</td>
-                            <td>CD Spectrometer</td>
-                            <td align="center"> Circular Dichroism</td>
-                            <td colspan="3" align="center"><strong> Kindly Contact the SAIF Center</strong> </td>
+                            <td rowspan="2" align="center">4</td>
+                            <td rowspan="2"><b>CD Spectrometer (Jasco J-1500)</b><br>
+                                    Staff in charge: Mr. Pavan Bennur, <br>
+                                    7795979950<br>
+                                    Email:<a href="111994benz@gmail.com">111994benz@gmail.com</a>
+                            </td>
+                            <td align="center">Circular Dichroism </td>
+                            <td align="center">50 Per Sample (Up to 5 scans) </td>
+                            <td align="center">100/- +18% GST Per Sample (Up to 5 scans) </td>
+                            <td align="center">300/- +18% GST Per Sample (Up to 5 scans) </td>
                         </tr>
                     </table>
                 </div>
@@ -225,7 +263,7 @@ include 'db_con.php';
                             <td align="center">1</td>
                             <td>FT-NMR Spectrometer</td>
                             <td>Jeol 400 MHz / JNM- ECZ 400S</td>
-                            <td>Operating Frequency: 400 MHz Probe,-800 C to 1500 C temperature Auto sample changer with handling capacity of 30 samples.
+                            <td>Operating Frequency:400 MHz Probe,-80<sup>0</sup></sup>C to 150<sup>0</sup>C temperature Auto sample changer with handling capacity of 30 samples
                             </td>
                             <td>Structure identification of organic, inorganic and polymer materials 1D and 2D NMR spectra of all active nuclei, DEPT, APT, Cosy,Cosy with or without gradient, TOCSY,
                                 NOESY, HMQC, HMBC etc.
@@ -252,7 +290,7 @@ include 'db_con.php';
                             <td align="center">4</td>
                             <td>CD Spectrometer</td>
                             <td>Jasco/J-1500</td>
-                            <td>Xenon arc lamp source Temperature ramping (-40o to 130oC) and thermal denaturation for screening binding High speed scanning (10000 nm/min) </td>
+                            <td>Xenon arc lamp source Temperature ramping (-40<sup>0</sup> to 130<sup>0</sup>C) and thermal denaturation for screening binding High speed scanning (10000 nm/min) </td>
                             <td>Identifying structural aspects of proteins and DNA. Determine how similar a wild type protein is to mutant or show the extent of denaturation with a change in temperature or chemical environment.
                                 Studies on chiral molecule etc. </td>
                         </tr>

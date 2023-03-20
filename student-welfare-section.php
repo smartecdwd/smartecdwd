@@ -39,7 +39,8 @@ include 'db_con.php';
 <div class="inner_page">
   <div class="container">
     <div class="row border_around p-3 text-justify">
-      <div class="col-sm-3" style="background-color:#eee">
+      <div class="col-md-3 d-none d-sm-block col-sm-6
+" style="background-color:#eee">
 	  <h5 style="text-align:center;color:#BB6464;height:50px;padding:20px;font-size:17px;border-bottom:2px solid #BB6464;font-family:Alice"><b>FACILITIES</b></h5>
            <br>
 
@@ -70,7 +71,7 @@ include 'db_con.php';
       </div><br>
 <br>
 
-      <div class="col-sm-9 director_img">
+      <div class="col-md-9 col-sm-6 director_img">
         <h2 class="title_head" style="font-family:Trirong;text-align:center">Student Welfare Section</h2>
         <hr>
 		<img src="images/facility/welfare section/welfare.jpg" class="img-fluid"><br>

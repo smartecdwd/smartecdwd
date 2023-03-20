@@ -6,7 +6,7 @@
     $res=mysqli_query($conn,$qry);
     //$rcnt=mysqli_num_rows($res);
     $row=mysqli_fetch_array($res);
-    $filename = "https://smartechd.online/kud/admin_panel/announcement/upload/".$row['ftitle'];
+    $filename = "https://kud.ac.in/admin_panel/announcement/upload/".$row['ftitle'];
     echo "<script> window.location.href='".$filename."';</script>";
     // Header content type
    // header("Content-type: application/pdf");

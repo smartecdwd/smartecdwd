@@ -1,0 +1,88 @@
+vnav {
+	position: relative;
+	margin: 50px;
+	width: 360px;
+    background: #f8f9fa;
+}
+vnav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+vnav ul li {
+  /* Sub Menu */
+  width:250px;
+}
+vnav ul li a {
+	display: block;
+	padding: 10px 15px;
+	color: #145DA0;
+	background-color: #f8f9fa;
+	text-decoration: none;
+	border-bottom:1px dotted #0074B7;
+    font-family:exo;
+    font-size:15px;
+    text-align:left;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	transition: 0.2s linear;
+}
+vnav ul li a:hover {
+	/*background: #1d4f71;*/
+	background-color: #ccc;
+}
+vnav ul li a .active {
+  background-color:#ebedf0 ; /*#6495ED;*/
+  color: #0074B7;
+}
+vnav ul li a .fa {
+	width: 16px;
+	text-align: center;
+	margin-right: 5px;
+	float:right;
+}
+vnav ul ul {
+	background: rgba(0, 0, 0, 0.2);
+}
+vnav ul li ul li a {
+	/*border-left: 4px solid transparent;*/
+	padding: 10px 30px;
+	font-size:13px;
+	color:#145DA0;
+}
+vnav ul li ul li a:hover {
+
+	border-left: 3px solid #3498db;
+}
+vnav .submenu ul li ul li a .active {
+  background-color:#ebedf0 ; /*#6495ED;*/
+  color: #0074B7;
+}
+@media only screen and (max-device-width: 768px) {
+    .navbar-toggler-icon {
+        position:relative;
+        background-image: none;
+        background:#f8f9fa;
+        left:0;
+        padding-top:5px;
+    }
+    .navbar-toggler-icon::before {
+        font-family: FontAwesome;
+        content: "\f0c9"; /* fa-bars, fa-navicon */
+        }
+    h5{
+        font-size:15px;
+    }
+         
+    p{
+        font-size:15px;
+    }
+    .sidebar{
+        border:0px;
+    }
+}
+.sidebar{
+    background-color:#fff;border:1px solid #005b96;
+}
