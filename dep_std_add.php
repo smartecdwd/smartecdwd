@@ -1,14 +1,13 @@
 <?php
     session_start();
-    //	error_reporting(1);
-	
     include "db_con.php";
-	?>
+    
+?>
 
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Karnatak University | Department - Faculty</title>
+    <title>Karnatak University | Department - Student Details</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -29,6 +28,7 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="css/vstyle1.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 	
@@ -68,7 +68,7 @@
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread" style="font-family:Exo;color:#fff;font-size:18px;padding:7px"><?php echo $_SESSION['dname']; ?> - Faculty</h1>
+            <h1 class="mb-2 bread" style="font-family:Exo;color:#fff;font-size:18px;padding:7px"><?php echo $_SESSION['dname']; ?> - Student Details</h1>
           </div>
         </div>
       </div>
@@ -80,68 +80,73 @@
 				<div class="col-md-12 p-4 p-md-5 order-md-last bg-light" style="border:1px solid #1eaaf1;box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;">
                 	<div class="row" style="margin-top: 10px">
                         <div class="col-12">
-					        <form action="faculty_insert.php" method="post" enctype="multipart/form-data">
-					    	    <div class="form-group">
-                           	    <label class="label" for="name" style="font-size:14px;color:#000">Department Name</label>
-                           	     <?php
-                           	        $qry="select did,dname from dep_mas where did=".$_SESSION['did'];
-                           	        $res=mysqli_query($conn,$qry);
-                           	        $row=mysqli_fetch_array($res);
-                           	        
-                           	    ?>
-    							<input class="form-control" name="dp" id="dp" style="font-size:14px" readonly="true" value='<?php echo $row['dname'];?>' required>
-				            </div>
+					        <form action="dep_std_add.php" method="post" enctype="multipart/form-data">
+					            
+					    	        <div class="form-group">
+                           	            <label class="label" for="name" style="font-size:14px;color:#000">Department Name</label>
+                           	       
+                           	       
+                           	            <?php
+                                   	        $qry="select did,dname from dep_mas where did=".$_SESSION['did'];
+                                   	        $res=mysqli_query($conn,$qry);
+                                   	        $row=mysqli_fetch_array($res);
+                                   	        
+                                   	    ?>
+    							        <input class="form-control" name="dp" id="dp" style="font-size:14px" readonly="true" value='<?php echo $_SESSION['dname'];?>' required>
+				                    </div>
+				              
+				                
+				                    <div class="form-group">
+						                <label class="label" for="name" style="font-size:14px;color:#000">Academic Year</label>
+						           
+							            <select class="form-control" name="yr" id="yr" style="font-size:14px">
+							                <?php
+							                    
+							                    $yr=date('d-m-Y');
+							                    $yr1=date('Y',strtotime($yr));
+							                    $mn=date('m',strtotime($yr));
+							                    for($i=$yr1;$i>=2010;$i--)
+        							            {
+        							                if($mn>=6)
+        							                    echo "<option>".$i." - " . ($i + 1) ."</option>";
+        							                else
+        							                    echo "<option>".($i-1)." - " . $i ."</option>" ;
+        							            }
+							                ?>
+							            </select>
+						        
+						    </div>
 						<div class="form-group">
-						
+							<label class="label" for="name" style="font-size:14px;color:#000">Register No.</label>
+							<input type="text" class="form-control" name="rn" style="font-size:14px" required>
+						</div>
+						<div class="form-group">
 							<label class="label" for="name" style="font-size:14px;color:#000">Name</label>
-							<input type="text" class="form-control" name="fn" style="font-size:14px" required>
+							<input type="text" class="form-control" name="sn" style="font-size:14px" required>
 						</div>
 						<div class="form-group">
-						<label class="label" for="name" style="font-size:14px;color:#000">Designation</label>
-							<input type="text" class="form-control" style="font-size:14px" name="dg">
+						<label class="label" for="name" style="font-size:14px;color:#000">Address</label>
+							<textarea rows="3" class="form-control" style="font-size:14px" name="ad"></textarea>
 						</div>
 						<div class="form-group">
-						<label class="label" for="name" style="font-size:14px;color:#000">Specialization </label>
-							<input type="text" class="form-control" style="font-size:14px" name="sp">
+						<label class="label" for="name" style="font-size:14px;color:#000">Phone </label>
+							<input type="number" class="form-control" style="font-size:14px" name="ph1" required> 
 						</div>
 						<div class="form-group">
-						    <label class="label" for="name" style="font-size:14px;color:#000">Mobile 1</label>
-							<input type="text" class="form-control" style="font-size:14px" name="mob1">
+						    <label class="label" for="name" style="font-size:14px;color:#000">Mobile</label>
+							<input type="number" class="form-control" style="font-size:14px" name="ph2">
 						</div>
 						<div class="form-group">
-						    <label class="label" for="name" style="font-size:14px;color:#000">Mobile 2</label>
-							<input type="text" class="form-control" style="font-size:14px" name="mob2">
+						    <label class="label" for="name" style="font-size:14px;color:#000">Email ID </label>
+							<input type="email" class="form-control" style="font-size:14px" name="em" required>
 						</div>
 						<div class="form-group">
-						<label class="label" for="name" style="font-size:14px;color:#000">Email Id.</label>
-							<input type="text" class="form-control" style="font-size:14px" name="em">
+						<label class="label" for="name" style="font-size:14px;color:#000">Aadhar No</label>
+							<input type="text" class="form-control" style="font-size:14px" name="adh" required>
 						</div>
-						<div class="form-group">
-						<label class="label" for="name" style="font-size:14px;color:#000">Website URL</label>
-							<input type="text" class="form-control" style="font-size:14px" name="wurl">
-						</div>
-						<div class="form-group">
-						<label class="label" for="name" style="font-size:14px;color:#000">Research URL</label>
-							<input type="text" class="form-control" style="font-size:14px" name="rurl">
-						</div>
-						<div class="form-group">
-						<label class="label" for="name" style="font-size:14px;color:#000">Vidwan  URL</label>
-							<input type="text" class="form-control" style="font-size:14px" name="vurl">
-						</div>
-						<div class="form-group">
-							<label class="label" for="name" style="font-size:14px;color:#000">Upload Faculty Image</label>
-							<input type="file" class="form-control" name="f1" style="font-size:14px;color:#000" placeholder="Upload Faculty Image" accept="image/png,image/jpeg">
-						</div>	
-						<div class="form-group">
-							<label class="label" for="name" style="font-size:14px;color:#000">Upload Profile</label>
-							<input type="file" class="form-control" name="f2" style="font-size:14px;color:#000" accept="application/pdf">
-						</div>
-						<div class="form-group">
-						    <label class="label" for="name" style="font-size:14px;color:#000">Display Order</label>
-							<input type="number" class="form-control" style="font-size:14px;width:100px" name="dod" value='<?php echo $dod;?>'>
-						</div>
+						
 						<div class="form-group" style="padding-top:20px;text-align:center">
-							<input type="submit" value="Submit" class="btn btn-primary py-3 px-5">
+							<input type="submit" name="submit" value="Submit" class="btn btn-primary py-3 px-5">
 						</div>
 						 <input type="text" name="tdd" value='<?php echo $_SESSION['did']; ?>' style='visibility:hidden'>
 					</form>
@@ -151,7 +156,7 @@
 				
 			</div>
 		</div>
-		
+	
 	</section>
 
 		
@@ -179,7 +184,6 @@
   <script src="js/scrollax.min.js"></script>
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
-
     <script>
         /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
         var dropdown = document.getElementsByClassName("dropdown-btn");
@@ -200,3 +204,24 @@
 
   </body>
 </html>
+<?php
+    if(isset($_POST['submit']))
+    {
+        $did=$_REQUEST['tdd'];     
+        $yr=$_REQUEST['yr'];
+        $sn=$_REQUEST['sn'];
+        $ad=$_REQUEST['ad'];
+        $p1=$_REQUEST['ph1'];
+        $p2=$_REQUEST['ph2'];
+        $em=$_REQUEST['em'];
+        $ah=$_REQUEST['adh'];
+        $rn=$_REQUEST['rn'];
+        
+        $qry="insert into std_details (did,reg_no,sname,address,ph1,ph2,email,ad_no,ac_yr)
+                values($did,'$rn','$sn','$ad','p1','$p2','$em','$ah','$yr')";
+        $res=mysqli_query($conn,$qry);
+        
+        echo "<script>window.location.href='dept_dashboard.php';</script>";
+        
+    }
+?>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Karnatak University | IQAC</title>
+    <title>Karnatak University | Department</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
@@ -24,11 +24,14 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/vstyle.css">
-	
+	<style>
+	        .categories li a:hover{
+	            color:#fff;
+	        }
+	</style>
   </head>
   <body>
-	  <div class="py-2">
+	  <div class="py-2 bg-primary">
     	<div class="container">
     		<div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
 	    		<div class="col-lg-12 d-block">
@@ -48,7 +51,7 @@
 	      </button>
 	      <!-- <p class="button-custom order-lg-last mb-0"><a href="appointment.html" class="btn btn-secondary py-2 px-3">Make An Appointment</a></p> -->
 	      <div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
+	        	<ul class="navbar-nav ml-auto">
 					<li class="nav-item active"><a href="dashboard.php" class="nav-link pl-0" style="font-size:20px">Home</a></li>
 					<li class="nav-item"><a href="index.php" class="nav-link" style="font-size:20px">Logout</a></li>
 				</ul>
@@ -57,11 +60,13 @@
 	  </nav>
     <!-- END nav -->
     
-    <section class="hero-wrap">
+    <section class="hero-wrap hero-wrap-2" style="background-image: url('images/ku5.jpg');">
+      <div class="overlay"></div>
       <div class="container">
         <div class="row no-gutters slider-text align-items-center justify-content-center">
           <div class="col-md-9 ftco-animate text-center">
-            <h1 class="mb-2 bread" style="font-family:Exo;color:#fff;font-size:18px;padding:7px">Internal Quality Assurance Cell</h1>
+            <h1 class="mb-2 bread" style="font-family:Exo">Department</h1>
+             
           </div>
         </div>
       </div>
@@ -71,22 +76,19 @@
 			<div class="container">
 				<div class="row">					
 					<div class="col-lg-4 sidebar ftco-animate">            
-						<div class="sidebar-box ftco-animate">	
-						    <div class="vertical-menu" style="width:100%;font-family:exo">
-						        <a href="iqac-obj.php" class="active">About IQAC </a>
-								<a href="iqac_team.php">IQAC Team</a> 
-								<a href="iqac-advisory.php">Advisory Committee Members</a>
-								<a href="iqac_act.php">Activities of IQAC</a>
-								<a href="iqac_feedbk_stake.php">Feedback of Stake Holders </a>
-								<a href="iqac_rep.php">IQAC Reports </a>					
-								<a href="iqac_pol.php">Policies and Guidelines</a>
-								<a href="iqac_prg.php">Programme Specific Outcomes</a>
-								<a href="iqac_nirf.php">NIRF</a>
-								<a href="iqac_bp.php">Best Practices</a>
-								<a href="iqac_gl.php">Gallery</a>
-								<a href="iqac_ex.php">Extras</a>
-								
-                            </div>
+						<div class="sidebar-box ftco-animate">							
+							<ul class="categories">
+								<li><a href="dept_det.php" style="color:#2E4C6D">Department</a> </li>
+								<!--<li><a href="dep_prg_off.php" style="color:#2E4C6D">Programmes Offered</a> </li>-->
+								<li><a href="fac.php" style="color:#2E4C6D">Faculty </a></li>
+								<!--<li><a href="fac_pub.php" style="color:#2E4C6D">Faculty Publications</a></li>
+								<li><a href="fac_research.php" style="color:#2E4C6D">Research Projects</a></li>
+								<li><a href="fac_resea_sch.php" style="color:#2E4C6D">Research Scholars</a></li>-->
+							    <li><a href="dep_syl.php" style="color:#2E4C6D">Syllabus</a></li>
+								<li><a href="dep_tt.php" style="color:#2E4C6D">TimeTable</a></li>
+							
+								<li><a href="#" style="color:#2E4C6D">Gallery</a></li>
+							</ul>
 						</div>
 
             
@@ -94,7 +96,7 @@
           </div><!-- END COL -->
 		  
           <div class="col-lg-7 ftco-animate">
-             <center><img src="images/iqac.png" alt=""  class="img-fluid">         </center>
+              <img src="images/dept2.jpg" alt=""  class="img-fluid">         
           </div> <!-- .col-md-8 -->
 
         </div>
